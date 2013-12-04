@@ -17,20 +17,12 @@
     <parent>
         <groupId>org.switchyard.quickstarts</groupId>
         <artifactId>switchyard-quickstart-parent</artifactId>
-        <version>2.0.0-SNAPSHOT</version>
+        <version>1.1.0.Final</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-bpel-service</artifactId>
-    <name>Quickstart : BPEL Service</name>
-    <packaging>pom</packaging>
-    <modules>
-        <module>say_hello</module>
-        <module>jms_binding</module>
-        <module>loan_approval</module>
-        <module>simple_correlation</module>
-        <module>xts_subordinate_wsba</module>
-        <module>xts_wsat</module>
-    </modules>
+    <artifactId>switchyard-quickstart-bpel-service-jms-binding</artifactId>
+    <name>Quickstart : BPEL Service : JMS Binding</name>
+    <packaging>jar</packaging>
     <dependencies>
         <dependency>
             <groupId>org.switchyard</groupId>
@@ -101,25 +93,35 @@
     </dependencies>
     <build>
         <finalName>${project.artifactId}</finalName>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.switchyard</groupId>
-                    <artifactId>switchyard-plugin</artifactId>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <goal>configure</goal>
-                            </goals>
-                            <configuration>
-                                <scannerClassNames>
-                                    <param>org.switchyard.transform.config.model.TransformSwitchYardScanner</param>
-                                </scannerClassNames>
-                            </configuration>
-                        </execution>
-                    </executions>
-                </plugin>
-            </plugins>
-        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <configuration>
+                    <executable>java</executable>
+                    <classpathScope>test</classpathScope>
+                    <mainClass>org.switchyard.quickstarts.bpel.service.hello.HornetQClient</mainClass>
+                    <arguments>
+                        <argument>Skippy</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.switchyard</groupId>
+                <artifactId>switchyard-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>configure</goal>
+                        </goals>
+                        <configuration>
+                            <scannerClassNames>
+                                <param>org.switchyard.transform.config.model.TransformSwitchYardScanner</param>
+                            </scannerClassNames>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
     </build>
 </project>
