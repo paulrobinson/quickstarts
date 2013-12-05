@@ -9,10 +9,9 @@ import org.switchyard.component.test.mixins.http.HTTPMixIn;
 import org.switchyard.transform.config.model.TransformSwitchYardScanner;
 
 @RunWith(SwitchYardRunner.class)
-@SwitchYardTestCaseConfig(
+@SwitchYardTestCaseConfig(mixins = {CDIMixIn.class, HTTPMixIn.class},
         config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-        scanners = TransformSwitchYardScanner.class,
-        mixins = {CDIMixIn.class, HTTPMixIn.class})
+        scanners = TransformSwitchYardScanner.class)
 public class WebServiceTest {
 
     private HTTPMixIn httpMixIn;
