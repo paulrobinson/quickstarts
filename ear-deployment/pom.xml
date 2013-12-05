@@ -33,4 +33,13 @@
         <module>order-consumer</module>
         <module>ear-assembly</module>
     </modules>
+
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
 </project>
