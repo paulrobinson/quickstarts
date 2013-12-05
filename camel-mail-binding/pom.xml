@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-camel-mail-binding</artifactId>
-    <name>Quickstart : Camel Mail Binding</name>
+    <name>SwitchYard Quickstart: camel-mail-binding</name>
     <dependencies>
         <dependency>
             <groupId>org.switchyard</groupId>

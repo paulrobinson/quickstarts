@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-camel-bus-cdi</artifactId>
-    <name>Quickstart : Camel Exchange Bus CDI</name>
+    <name>SwitchYard Quickstart: camel-bus-cdi</name>
     <properties>
         <switchyard.version>2.0.0-SNAPSHOT</switchyard.version>
         <maven.compiler.target>1.6</maven.compiler.target>

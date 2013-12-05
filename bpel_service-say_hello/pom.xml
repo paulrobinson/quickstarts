@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-bpel_service-say_hello</artifactId>
-    <name>Quickstart : BPEL Service : Say Hello</name>
+    <name>SwitchYard Quickstart: bpel_service-say_hello</name>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>

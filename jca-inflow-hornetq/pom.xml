@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-jca-inflow-hornetq</artifactId>
-    <name>Quickstart : JCA Inflow Binding for HornetQ</name>
+    <name>SwitchYard Quickstart: jca-inflow-hornetq</name>
     <properties>
         <skipTests>true</skipTests>
     <maven.compiler.target>1.6</maven.compiler.target>

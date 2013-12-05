@@ -25,7 +25,7 @@
     </parent>
     <artifactId>switchyard-camel-soap-proxy</artifactId>
     <packaging>jar</packaging>
-    <name>Quickstart : Camel SOAP Proxy</name>
+    <name>SwitchYard Quickstart: camel-soap-proxy</name>
     <dependencies>
         <dependency>
             <groupId>org.switchyard</groupId>

@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-bpel_service-xts_wsat-ws</artifactId>
-    <name>Quickstart : BPEL Service : XTS WSAT : Airport Web Service</name>
+    <name>SwitchYard Quickstart: bpel_service-xts_wsat - ws</name>
     <packaging>ejb</packaging>
     <dependencies/>
     <build>

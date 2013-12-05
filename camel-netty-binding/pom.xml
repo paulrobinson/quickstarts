@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-camel-netty-binding</artifactId>
-    <name>Quickstart : Camel Netty Binding</name>
+    <name>SwitchYard Quickstart: camel-netty-binding</name>
     <properties>
         <maven.exec.mainClass>org.switchyard.quickstarts.camel.netty.binding.TCPClient</maven.exec.mainClass>
     <maven.compiler.target>1.6</maven.compiler.target>

@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-rules-camel-cbr</artifactId>
-    <name>Quickstart : Rules+Camel Content-Based Router</name>
+    <name>SwitchYard Quickstart: rules-camel-cbr</name>
     <packaging>jar</packaging>
     <properties>
         <switchyard.version>2.0.0-SNAPSHOT</switchyard.version>

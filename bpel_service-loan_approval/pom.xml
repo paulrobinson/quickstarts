@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-bpel_service-loan_approval</artifactId>
-    <name>Quickstart : BPEL Service : Loan Approval</name>
+    <name>SwitchYard Quickstart: bpel_service-loan_approval</name>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>

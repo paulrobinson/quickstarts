@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-camel-ftp-binding</artifactId>
-    <name>Quickstart : Camel FTP Binding</name>
+    <name>SwitchYard Quickstart: camel-ftp-binding</name>
     <properties>
         <switchyard.version>2.0.0-SNAPSHOT</switchyard.version>
         <maven.compiler.target>1.6</maven.compiler.target>

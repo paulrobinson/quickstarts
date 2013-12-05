@@ -25,7 +25,7 @@
     </parent>
     <artifactId>switchyard-transform-jaxb</artifactId>
     <packaging>jar</packaging>
-    <name>Quickstart : JAXB Transformation</name>
+    <name>SwitchYard Quickstart: transform-jaxb</name>
     <dependencies>
         <dependency>
             <groupId>org.switchyard</groupId>

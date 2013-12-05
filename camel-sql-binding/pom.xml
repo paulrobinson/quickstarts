@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-camel-sql-binding</artifactId>
-    <name>Quickstart : Camel SQL Binding</name>
+    <name>SwitchYard Quickstart: camel-sql-binding</name>
     <properties>
         <switchyard.version>2.0.0-SNAPSHOT</switchyard.version>
         <maven.compiler.target>1.6</maven.compiler.target>

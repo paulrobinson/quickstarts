@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-camel-service</artifactId>
-    <name>Quickstart : Camel Service</name>
+    <name>SwitchYard Quickstart: camel-service</name>
     <packaging>jar</packaging>
     <properties>
         <switchyard.version>2.0.0-SNAPSHOT</switchyard.version>

@@ -25,7 +25,7 @@
     </parent>
     <groupId>org.switchyard.quickstarts</groupId>
     <artifactId>switchyard-ear-deployment</artifactId>
-    <name>Quickstart : EAR Deployment</name>
+    <name>SwitchYard Quickstart: ear-deployment</name>
     <packaging>pom</packaging>
     <modules>
         <module>artifacts</module>

@@ -25,7 +25,7 @@
     </parent>
     <artifactId>switchyard-transform-smooks</artifactId>
     <packaging>jar</packaging>
-    <name>Quickstart : Smooks Transformation</name>
+    <name>SwitchYard Quickstart: transform-smooks</name>
     <dependencies>
         <dependency>
             <groupId>org.switchyard</groupId>

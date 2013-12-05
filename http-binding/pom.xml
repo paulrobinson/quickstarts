@@ -25,7 +25,7 @@
     </parent>
     <artifactId>switchyard-http-binding</artifactId>
     <packaging>jar</packaging>
-    <name>Quickstart : HTTP Binding</name>
+    <name>SwitchYard Quickstart: http-binding</name>
     <dependencies>
         <dependency>
             <groupId>org.switchyard</groupId>

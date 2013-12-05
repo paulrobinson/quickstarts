@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-camel-jpa-binding</artifactId>
-    <name>Quickstart : Camel JPA Binding</name>
+    <name>SwitchYard Quickstart: camel-jpa-binding</name>
     <dependencies>
         <dependency>
             <groupId>org.switchyard.components</groupId>

@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-bpel_service-jms_binding</artifactId>
-    <name>Quickstart : BPEL Service : JMS Binding</name>
+    <name>SwitchYard Quickstart: bpel_service-jms_binding</name>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
