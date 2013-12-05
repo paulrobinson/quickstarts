@@ -29,9 +29,9 @@ import org.switchyard.transform.config.model.TransformSwitchYardScanner;
 
 @RunWith(SwitchYardRunner.class)
 @SwitchYardTestCaseConfig(
+        mixins = {CDIMixIn.class, HTTPMixIn.class},
         config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-        scanners = TransformSwitchYardScanner.class,
-        mixins = {CDIMixIn.class, HTTPMixIn.class})
+        scanners = TransformSwitchYardScanner.class)
         //mixins = {CDIMixIn.class, PropertyMixIn.class, HTTPMixIn.class})
 public class WebServiceTest {
 
