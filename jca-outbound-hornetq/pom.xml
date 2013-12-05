@@ -124,4 +124,5 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
         </license>
     </licenses>
+<description>Quickstart : JCA Outbound Binding for HornetQ</description>
 </project>

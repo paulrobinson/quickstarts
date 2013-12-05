@@ -93,4 +93,5 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
         </license>
     </licenses>
+<description>Quickstart : Camel Exchange Bus CDI</description>
 </project>

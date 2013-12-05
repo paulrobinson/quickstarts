@@ -119,4 +119,5 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
         </license>
     </licenses>
+<description>Quickstart : JCA Inflow Binding for ActiveMQ</description>
 </project>
