@@ -25,6 +25,18 @@
     </parent>
     <artifactId>switchyard-camel-jpa-binding</artifactId>
     <name>SwitchYard Quickstart: camel-jpa-binding</name>
+    <description>Quickstart : Camel JPA Binding</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
+    <properties>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.switchyard.components</groupId>
@@ -98,20 +110,4 @@
             </plugin>
         </plugins>
     </build>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
-
-
-    <properties>
-        <maven.compiler.target>1.6</maven.compiler.target>
-        <maven.compiler.source>1.6</maven.compiler.source>
-    </properties>
-<description>Quickstart : Camel JPA Binding</description>
 </project>

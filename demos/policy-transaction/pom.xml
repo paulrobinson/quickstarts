@@ -26,6 +26,14 @@
     <groupId>org.switchyard.quickstarts.demos</groupId>
     <artifactId>switchyard-demos-policy-transaction</artifactId>
     <name>Quickstart Demo : Transaction Policy</name>
+    <description>Quickstart Demo : Transaction Policy</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
     <properties>
         <skipTests>true</skipTests>
     <maven.compiler.target>1.6</maven.compiler.target>
@@ -167,14 +175,4 @@
             </plugin>
         </plugins>
     </build>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
-<description>Quickstart Demo : Transaction Policy</description>
 </project>

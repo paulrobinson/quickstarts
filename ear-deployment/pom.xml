@@ -25,16 +25,9 @@
     </parent>
     <groupId>org.switchyard.quickstarts</groupId>
     <artifactId>switchyard-ear-deployment</artifactId>
-    <name>SwitchYard Quickstart: ear-deployment</name>
     <packaging>pom</packaging>
-    <modules>
-        <module>artifacts</module>
-        <module>order-service</module>
-        <module>order-consumer</module>
-        <module>ear-assembly</module>
-    </modules>
-
-
+    <name>SwitchYard Quickstart: ear-deployment</name>
+    <description>Quickstart : EAR Deployment</description>
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
@@ -42,11 +35,14 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
         </license>
     </licenses>
-
-
     <properties>
         <maven.compiler.target>1.6</maven.compiler.target>
         <maven.compiler.source>1.6</maven.compiler.source>
     </properties>
-<description>Quickstart : EAR Deployment</description>
+    <modules>
+        <module>artifacts</module>
+        <module>order-service</module>
+        <module>order-consumer</module>
+        <module>ear-assembly</module>
+    </modules>
 </project>

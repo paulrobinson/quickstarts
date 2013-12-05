@@ -25,6 +25,14 @@
     </parent>
     <artifactId>switchyard-camel-sql-binding</artifactId>
     <name>SwitchYard Quickstart: camel-sql-binding</name>
+    <description>Quickstart : Camel SQL Binding</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
     <properties>
         <switchyard.version>2.0.0-SNAPSHOT</switchyard.version>
         <maven.compiler.target>1.6</maven.compiler.target>
@@ -107,14 +115,4 @@
             </plugin>
         </plugins>
     </build>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
-<description>Quickstart : Camel SQL Binding</description>
 </project>

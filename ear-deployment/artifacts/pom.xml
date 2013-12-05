@@ -27,11 +27,7 @@
     <artifactId>switchyard-ear-deployment-artifacts</artifactId>
     <packaging>jar</packaging>
     <name>SwitchYard Quickstart: ear-deployment - artifacts</name>
-    <build>
-        <finalName>${project.artifactId}</finalName>
-    </build>
-
-
+    <description>Quickstart : EAR Deployment - Service Artifacts</description>
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
@@ -39,11 +35,11 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
         </license>
     </licenses>
-
-
     <properties>
         <maven.compiler.target>1.6</maven.compiler.target>
         <maven.compiler.source>1.6</maven.compiler.source>
     </properties>
-<description>Quickstart : EAR Deployment - Service Artifacts</description>
+    <build>
+        <finalName>${project.artifactId}</finalName>
+    </build>
 </project>

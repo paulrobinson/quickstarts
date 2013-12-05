@@ -24,8 +24,16 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-camel-service</artifactId>
-    <name>SwitchYard Quickstart: camel-service</name>
     <packaging>jar</packaging>
+    <name>SwitchYard Quickstart: camel-service</name>
+    <description>Quickstart : Camel Service</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
     <properties>
         <switchyard.version>2.0.0-SNAPSHOT</switchyard.version>
         <maven.compiler.target>1.6</maven.compiler.target>
@@ -97,14 +105,4 @@
             </plugin>
         </plugins>
     </build>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
-<description>Quickstart : Camel Service</description>
 </project>

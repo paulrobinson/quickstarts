@@ -27,6 +27,14 @@
     <artifactId>switchyard-demos-helpdesk</artifactId>
     <packaging>war</packaging>
     <name>Quickstart Demo : Help Desk</name>
+    <description>Quickstart Demo : Help Desk</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
     <properties>
     <maven.compiler.target>1.6</maven.compiler.target>
         <maven.compiler.source>1.6</maven.compiler.source>
@@ -169,14 +177,4 @@
             </plugin>
         </plugins>
     </build>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
-<description>Quickstart Demo : Help Desk</description>
 </project>

@@ -25,6 +25,14 @@
     </parent>
     <artifactId>switchyard-camel-jaxb</artifactId>
     <name>SwitchYard Quickstart: camel-jaxb</name>
+    <description>Quickstart : Camel JAXB</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
     <properties>
         <switchyard.version>2.0.0-SNAPSHOT</switchyard.version>
         <maven.compiler.target>1.6</maven.compiler.target>
@@ -86,14 +94,4 @@
             </plugin>
         </plugins>
     </build>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
-<description>Quickstart : Camel JAXB</description>
 </project>

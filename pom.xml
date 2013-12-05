@@ -29,6 +29,13 @@
     <name>SwitchYard Quickstart: quickstarts</name>
     <description>Quickstarts repository for SwitchYard</description>
     <url>http://switchyard.org</url>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
     <organization>
         <name>JBoss by Red Hat</name>
         <url>http://jboss.org</url>
@@ -38,6 +45,10 @@
         <developerConnection>scm:git:ssh://git@github.com:jboss-switchyard/quickstarts.git</developerConnection>
         <url>http://github.com/jboss-switchyard/quickstarts</url>
     </scm>
+    <properties>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
+    </properties>
     <modules>
         <module>bean-service</module>
         <module>bpel_service-jms_binding</module>
@@ -95,35 +106,6 @@
         <module>demos/cluster</module>
         <module>demos/transaction-propagation</module>
     </modules>
-    <!-- Conditionally include the assembly module.  It's not always present e.g. in the quickstarts distro. -->
-    <profiles>
-        <profile>
-            <activation>
-                <file>
-                    <exists>assembly</exists>
-                </file>
-            </activation>
-            <modules>
-                <module>assembly</module>
-            </modules>
-        </profile>
-    </profiles>
-    <repositories>
-        <repository>
-            <id>jboss-public-repository-group</id>
-            <name>JBoss Public Maven Repository Group</name>
-            <url>https://repository.jboss.org/nexus/content/groups/public/</url>
-            <layout>default</layout>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </snapshots>
-        </repository>
-    </repositories>
     <dependencies>
         <dependency>
             <groupId>log4j</groupId>
@@ -178,19 +160,33 @@
             </plugin>
         </plugins>
     </build>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
-
-
-    <properties>
-        <maven.compiler.target>1.6</maven.compiler.target>
-        <maven.compiler.source>1.6</maven.compiler.source>
-    </properties>
+    <!-- Conditionally include the assembly module.  It's not always present e.g. in the quickstarts distro. -->
+    <profiles>
+        <profile>
+            <activation>
+                <file>
+                    <exists>assembly</exists>
+                </file>
+            </activation>
+            <modules>
+                <module>assembly</module>
+            </modules>
+        </profile>
+    </profiles>
+    <repositories>
+        <repository>
+            <id>jboss-public-repository-group</id>
+            <name>JBoss Public Maven Repository Group</name>
+            <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>
