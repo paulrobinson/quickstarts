@@ -27,6 +27,8 @@
     <name>Quickstart : Camel Quartz Binding</name>
     <properties>
         <switchyard.version>2.0.0-SNAPSHOT</switchyard.version>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
     </properties>
     <dependencies>
         <dependency>
@@ -54,8 +56,6 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
                 </configuration>
             </plugin>
             <plugin>
