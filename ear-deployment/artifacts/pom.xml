@@ -27,4 +27,7 @@
     <artifactId>switchyard-ear-deployment-artifacts</artifactId>
     <packaging>jar</packaging>
     <name>Quickstart : EAR Deployment - Service Artifacts</name>
+    <build>
+        <finalName>${project.artifactId}</finalName>
+    </build>
 </project>

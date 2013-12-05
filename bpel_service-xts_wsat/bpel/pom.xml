@@ -27,6 +27,7 @@
     <name>Quickstart : BPEL Service : XTS WSAT : Business Travel Process</name>
     <packaging>jar</packaging>
     <build>
+        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.switchyard</groupId>

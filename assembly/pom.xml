@@ -28,6 +28,7 @@
     <name>SwitchYard : Quickstarts Distribution Assembly</name>
     <description>SwitchYard Quickstarts Distribution Assembly</description>
     <build>
+        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
