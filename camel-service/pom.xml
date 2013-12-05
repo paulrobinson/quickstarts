@@ -20,7 +20,7 @@
         <version>2.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-camel-service</artifactId>
+    <artifactId>switchyard-camel-service</artifactId>
     <name>Quickstart : Camel Service</name>
     <packaging>jar</packaging>
     <properties>

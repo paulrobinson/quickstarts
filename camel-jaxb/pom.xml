@@ -20,7 +20,7 @@
         <version>2.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-camel-jaxb</artifactId>
+    <artifactId>switchyard-camel-jaxb</artifactId>
     <name>Quickstart : Camel JAXB</name>
     <properties>
         <switchyard.version>2.0.0-SNAPSHOT</switchyard.version>

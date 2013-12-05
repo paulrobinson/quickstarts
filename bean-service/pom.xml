@@ -20,7 +20,7 @@
         <version>2.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-bean-service</artifactId>
+    <artifactId>switchyard-bean-service</artifactId>
     <packaging>jar</packaging>
     <name>Quickstart : Bean Service</name>
     <dependencies>

@@ -20,7 +20,7 @@
         <version>2.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-validate-xml</artifactId>
+    <artifactId>switchyard-validate-xml</artifactId>
     <packaging>jar</packaging>
     <name>Quickstart : XML Message Validation</name>
     <dependencies>

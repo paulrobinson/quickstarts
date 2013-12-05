@@ -20,7 +20,7 @@
         <version>2.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-camel-quartz-binding</artifactId>
+    <artifactId>switchyard-camel-quartz-binding</artifactId>
     <name>Quickstart : Camel Quartz Binding</name>
     <properties>
         <switchyard.version>2.0.0-SNAPSHOT</switchyard.version>

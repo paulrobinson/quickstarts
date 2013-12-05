@@ -19,7 +19,7 @@
         <version>2.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>switchyard-quickstart-camel-amqp-binding</artifactId>
+    <artifactId>switchyard-camel-amqp-binding</artifactId>
     <name>Quickstart : Camel AMQP Binding</name>
     <properties>
         <maven.exec.mainClass>org.switchyard.quickstarts.camel.amqp.binding.QpidServer</maven.exec.mainClass>

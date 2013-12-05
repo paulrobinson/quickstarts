@@ -21,7 +21,7 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <groupId>org.switchyard.quickstarts.demos</groupId>
-    <artifactId>switchyard-quickstart-demo-orders</artifactId>
+    <artifactId>switchyard-demos-orders</artifactId>
     <packaging>war</packaging>
     <name>Quickstart Demo : Orders</name>
     <dependencies>

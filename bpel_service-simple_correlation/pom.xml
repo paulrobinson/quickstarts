@@ -20,7 +20,7 @@
         <version>1.1.0.Final</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-bpel-service-simple-correlation</artifactId>
+    <artifactId>switchyard-bpel_service-simple_correlation</artifactId>
     <name>Quickstart : BPEL Service : Simple Correlation</name>
     <packaging>jar</packaging>
     <dependencies>

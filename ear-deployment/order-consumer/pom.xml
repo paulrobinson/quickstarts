@@ -20,7 +20,7 @@
         <version>2.0.0-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-ear-deployment-order-consumer</artifactId>
+    <artifactId>switchyard-ear-deployment-order-consumer</artifactId>
     <name>Quickstart : EAR Deployment - Order Consumer</name>
     <dependencies>
         <dependency>

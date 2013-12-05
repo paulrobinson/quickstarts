@@ -20,7 +20,7 @@
         <version>1.1.0.Final</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-bpel-service-jms-binding</artifactId>
+    <artifactId>switchyard-bpel_service-jms_binding</artifactId>
     <name>Quickstart : BPEL Service : JMS Binding</name>
     <packaging>jar</packaging>
     <dependencies>

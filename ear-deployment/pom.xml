@@ -21,7 +21,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>org.switchyard.quickstarts</groupId>
-    <artifactId>switchyard-quickstart-ear-deployment</artifactId>
+    <artifactId>switchyard-ear-deployment</artifactId>
     <name>Quickstart : EAR Deployment</name>
     <packaging>pom</packaging>
     <modules>

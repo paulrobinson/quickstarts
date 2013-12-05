@@ -20,7 +20,7 @@
         <version>1.1.0.Final</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-bpel-service-loan-approval</artifactId>
+    <artifactId>switchyard-bpel_service-loan_approval</artifactId>
     <name>Quickstart : BPEL Service : Loan Approval</name>
     <packaging>jar</packaging>
     <dependencies>

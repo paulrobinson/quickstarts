@@ -20,7 +20,7 @@
         <version>2.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-remote-invoker</artifactId>
+    <artifactId>switchyard-remote-invoker</artifactId>
     <packaging>jar</packaging>
     <name>Quickstart : Remote Invoker</name>
     <dependencies>

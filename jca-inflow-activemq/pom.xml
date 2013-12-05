@@ -20,7 +20,7 @@
         <version>2.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-jca-inflow-activemq</artifactId>
+    <artifactId>switchyard-jca-inflow-activemq</artifactId>
     <name>Quickstart : JCA Inflow Binding for ActiveMQ</name>
     <properties>
         <skipTests>true</skipTests>

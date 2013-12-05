@@ -21,7 +21,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>org.switchyard.quickstarts</groupId>
-    <artifactId>switchyard-quickstart-soap-mtom</artifactId>
+    <artifactId>switchyard-soap-mtom</artifactId>
     <packaging>jar</packaging>
     <name>Quickstart : SOAP with MTOM</name>
     <dependencies>

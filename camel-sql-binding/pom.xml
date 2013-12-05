@@ -20,7 +20,7 @@
         <version>2.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-camel-sql-binding</artifactId>
+    <artifactId>switchyard-camel-sql-binding</artifactId>
     <name>Quickstart : Camel SQL Binding</name>
     <properties>
         <switchyard.version>2.0.0-SNAPSHOT</switchyard.version>

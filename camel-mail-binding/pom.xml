@@ -20,7 +20,7 @@
         <version>2.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-camel-mail-binding</artifactId>
+    <artifactId>switchyard-camel-mail-binding</artifactId>
     <name>Quickstart : Camel Mail Binding</name>
     <dependencies>
         <dependency>

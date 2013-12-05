@@ -21,7 +21,7 @@
         <relativePath>../../../pom.xml</relativePath>
     </parent>
     <groupId>org.switchyard.quickstarts.demos</groupId>
-    <artifactId>switchyard-quickstart-demo-multi-artifacts</artifactId>
+    <artifactId>switchyard-demos-multiApp-artifacts</artifactId>
     <packaging>jar</packaging>
     <name>Quickstart Demo: Multiple Applications - Service Artifacts</name>
     <!-- 

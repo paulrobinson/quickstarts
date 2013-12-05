@@ -16,11 +16,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.switchyard.quickstarts</groupId>
-        <artifactId>switchyard-quickstart-bpel-service-xts-wsat</artifactId>
+        <artifactId>switchyard-bpel_service-xts_wsat</artifactId>
         <version>2.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-bpel-service-xts-wsat-ws</artifactId>
+    <artifactId>switchyard-bpel_service-xts_wsat-ws</artifactId>
     <name>Quickstart : BPEL Service : XTS WSAT : Airport Web Service</name>
     <packaging>ejb</packaging>
     <dependencies/>

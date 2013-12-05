@@ -20,7 +20,7 @@
         <version>2.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-camel-jpa-binding</artifactId>
+    <artifactId>switchyard-camel-jpa-binding</artifactId>
     <name>Quickstart : Camel JPA Binding</name>
     <dependencies>
         <dependency>
