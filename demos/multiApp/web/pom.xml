@@ -57,7 +57,7 @@
         </dependency>
         <dependency>
             <groupId>org.switchyard.quickstarts.demos</groupId>
-            <artifactId>switchyard-quickstart-demo-multi-artifacts</artifactId>
+            <artifactId>switchyard-demos-multiApp-artifacts</artifactId>
             <scope>provided</scope>
             <version>${project.version}</version>
         </dependency>

@@ -41,15 +41,15 @@
     <dependencies>
         <dependency>
             <groupId>org.switchyard.quickstarts</groupId>
-            <artifactId>switchyard-quickstart-ear-deployment-artifacts</artifactId>
+            <artifactId>switchyard-ear-deployment-artifacts</artifactId>
         </dependency>
         <dependency>
             <groupId>org.switchyard.quickstarts</groupId>
-            <artifactId>switchyard-quickstart-ear-deployment-order-consumer</artifactId>
+            <artifactId>switchyard-ear-deployment-order-consumer</artifactId>
         </dependency>
         <dependency>
             <groupId>org.switchyard.quickstarts</groupId>
-            <artifactId>switchyard-quickstart-ear-deployment-order-service</artifactId>
+            <artifactId>switchyard-ear-deployment-order-service</artifactId>
         </dependency>
     </dependencies>
     <build>
@@ -63,17 +63,17 @@
                     <modules>
                         <jarModule>
                             <groupId>org.switchyard.quickstarts</groupId>
-                            <artifactId>switchyard-quickstart-ear-deployment-artifacts</artifactId>
+                            <artifactId>switchyard-ear-deployment-artifacts</artifactId>
                             <bundleDir>lib</bundleDir>
                         </jarModule>
                         <jarModule>
                             <groupId>org.switchyard.quickstarts</groupId>
-                            <artifactId>switchyard-quickstart-ear-deployment-order-consumer</artifactId>
+                            <artifactId>switchyard-ear-deployment-order-consumer</artifactId>
                             <includeInApplicationXml>true</includeInApplicationXml>
                         </jarModule>
                         <jarModule>
                             <groupId>org.switchyard.quickstarts</groupId>
-                            <artifactId>switchyard-quickstart-ear-deployment-order-service</artifactId>
+                            <artifactId>switchyard-ear-deployment-order-service</artifactId>
                             <includeInApplicationXml>true</includeInApplicationXml>
                         </jarModule>
                     </modules>
