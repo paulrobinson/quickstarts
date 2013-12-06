@@ -38,7 +38,17 @@
         <maven.compiler.target>1.6</maven.compiler.target>
         <maven.compiler.source>1.6</maven.compiler.source>
     </properties>
-    <dependencies/>
+    <dependencies>
+        <dependency>
+            <groupId>org.jboss.jbossts</groupId>
+            <artifactId>jbossxts-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.spec.javax.ejb</groupId>
+            <artifactId>jboss-ejb-api_3.1_spec</artifactId>
+        </dependency>
+    </dependencies>
     <build>
         <finalName>${project.artifactId}</finalName>
         <plugins>
