@@ -51,12 +51,12 @@
     </properties>
     <modules>
         <module>bean-service</module>
-        <module>bpel_service-jms_binding</module>
-        <module>bpel_service-loan_approval</module>
-        <module>bpel_service-say_hello</module>
-        <module>bpel_service-simple_correlation</module>
-        <module>bpel_service-xts_subordinate_wsba</module>
-        <module>bpel_service-xts_wsat</module>
+        <module>bpel-jms_binding</module>
+        <module>bpel-loan_approval</module>
+        <module>bpel-say_hello</module>
+        <module>bpel-simple_correlation</module>
+        <module>bpel-xts_subordinate_wsba</module>
+        <module>bpel-xts_wsat</module>
         <module>bpm-service</module>
         <module>camel-binding</module>
         <module>camel-jaxb</module>
