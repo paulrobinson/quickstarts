@@ -16,13 +16,6 @@
     limitations under the License.
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <repositories>
-        <repository>
-            <id>jboss-public-repository</id>
-            <name>JBoss Public Maven Repository</name>
-            <url>http://repository.jboss.org/nexus/content/groups/public</url>
-        </repository>
-    </repositories>
     <pluginRepositories>
         <pluginRepository>
             <id>jboss-public-repository</id>
@@ -58,6 +51,13 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
         </license>
     </licenses>
+    <repositories>
+        <repository>
+            <id>jboss-public-repository</id>
+            <name>JBoss Public Maven Repository</name>
+            <url>http://repository.jboss.org/nexus/content/groups/public</url>
+        </repository>
+    </repositories>
     <properties>
         <maven.compiler.target>1.6</maven.compiler.target>
         <maven.compiler.source>1.6</maven.compiler.source>

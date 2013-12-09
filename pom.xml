@@ -29,6 +29,10 @@
     <name>SwitchYard Quickstart: quickstarts</name>
     <description>Quickstarts repository for SwitchYard</description>
     <url>http://switchyard.org</url>
+    <organization>
+        <name>JBoss by Red Hat</name>
+        <url>http://jboss.org</url>
+    </organization>
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
@@ -36,10 +40,22 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
         </license>
     </licenses>
-    <organization>
-        <name>JBoss by Red Hat</name>
-        <url>http://jboss.org</url>
-    </organization>
+    <repositories>
+        <repository>
+            <id>jboss-public-repository-group</id>
+            <name>JBoss Public Maven Repository Group</name>
+            <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
     <scm>
         <connection>scm:git:https://github.com/jboss-switchyard/quickstarts.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:jboss-switchyard/quickstarts.git</developerConnection>
@@ -160,8 +176,8 @@
             </plugin>
         </plugins>
     </build>
-    <!-- Conditionally include the assembly module.  It's not always present e.g. in the quickstarts distro. -->
     <profiles>
+        <!-- Conditionally include the assembly module.  It's not always present e.g. in the quickstarts distro. -->
         <profile>
             <activation>
                 <file>
@@ -173,20 +189,4 @@
             </modules>
         </profile>
     </profiles>
-    <repositories>
-        <repository>
-            <id>jboss-public-repository-group</id>
-            <name>JBoss Public Maven Repository Group</name>
-            <url>https://repository.jboss.org/nexus/content/groups/public/</url>
-            <layout>default</layout>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </snapshots>
-        </repository>
-    </repositories>
 </project>
