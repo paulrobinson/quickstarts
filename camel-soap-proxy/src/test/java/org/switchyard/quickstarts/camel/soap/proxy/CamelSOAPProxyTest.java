@@ -33,9 +33,9 @@ import org.switchyard.transform.config.model.TransformSwitchYardScanner;
  */
 @RunWith(SwitchYardRunner.class)
 @SwitchYardTestCaseConfig(
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-        scanners = {TransformSwitchYardScanner.class},
-        mixins = {HTTPMixIn.class})
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    scanners = { TransformSwitchYardScanner.class },
+    mixins = { HTTPMixIn.class })
 public class CamelSOAPProxyTest {
 
     private static final String WEB_SERVICE = "http://localhost:8081/ReverseService";

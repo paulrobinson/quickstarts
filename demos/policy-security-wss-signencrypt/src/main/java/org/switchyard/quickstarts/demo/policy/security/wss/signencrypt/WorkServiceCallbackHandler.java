@@ -41,12 +41,12 @@ public class WorkServiceCallbackHandler implements CallbackHandler {
     @Override
     public void handle(Callback[] arg0) throws IOException, UnsupportedCallbackException {
         for (int i = 0; i < arg0.length; i++) {
-           WSPasswordCallback pc = (WSPasswordCallback)arg0[i];
-           String password = _passwords.get(pc.getIdentifier());
-           if (password != null) {
-              pc.setPassword(password);
-              return;
-           }
+            WSPasswordCallback pc = (WSPasswordCallback) arg0[i];
+            String password = _passwords.get(pc.getIdentifier());
+            if (password != null) {
+                pc.setPassword(password);
+                return;
+            }
         }
     }
 

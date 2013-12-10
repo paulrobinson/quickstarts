@@ -64,7 +64,7 @@ public class ObjectFactory {
     public OrderAck createOrderAck() {
         return new OrderAck();
     }
-    
+
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OrderAck }{@code >}}
      * 
@@ -82,5 +82,5 @@ public class ObjectFactory {
     public JAXBElement<Order> createOrder(Order value) {
         return new JAXBElement<Order>(_Order_QNAME, Order.class, null, value);
     }
- 
+
 }

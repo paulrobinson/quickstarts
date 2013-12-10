@@ -19,5 +19,6 @@ package org.switchyard.quickstarts.demo.multiapp;
 public interface InventoryService {
 
     void createItem(Item item);
+
     Item lookupItem(String itemId) throws ItemNotFoundException;
 }

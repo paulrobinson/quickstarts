@@ -24,7 +24,6 @@ import javax.jms.TextMessage;
 
 import org.switchyard.component.test.mixins.activemq.ActiveMQMixIn;
 
-
 /**
  * HornetQ client that uses JMS API to connect to a remote server, send
  * messages to a order queue and receive from shipping queue and filling stock queue.
@@ -33,24 +32,24 @@ import org.switchyard.component.test.mixins.activemq.ActiveMQMixIn;
  *
  */
 public final class ActiveMQClient {
-    
+
     private static final String ORDER_QUEUE = "OrderQueue";
     private static final String SHIPPING_QUEUE = "ShippingQueue";
     private static final String FILLING_STOCK_QUEUE = "FillingStockQueue";
-    
+
     /**
      * Private no-args constructor.
      */
     private ActiveMQClient() {
     }
-    
+
     /**
      * Only execution point for this application.
      * @param ignored not used.
      * @throws Exception if something goes wrong.
      */
     public static void main(final String[] args) throws Exception {
-        String[] orders = {"BREAD", "PIZZA", "JAM", "POTATO", "MILK", "JAM"};
+        String[] orders = { "BREAD", "PIZZA", "JAM", "POTATO", "MILK", "JAM" };
         if (args.length != 0) {
             orders = args;
         }

@@ -29,13 +29,13 @@ public interface GreetingService {
      * @param person Person object
      */
     void english(Person person);
-    
+
     /**
      * Prints a greeting message in Spanish using the passed in name.
      * @param person Person object
      */
     void spanish(Person person);
-    
+
     /**
      * Prints a greeting message in Japanese using the passed in name.
      * @param person Person object

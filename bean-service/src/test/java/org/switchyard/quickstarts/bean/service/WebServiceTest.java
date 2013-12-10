@@ -26,9 +26,9 @@ import org.switchyard.transform.config.model.TransformSwitchYardScanner;
 
 @RunWith(SwitchYardRunner.class)
 @SwitchYardTestCaseConfig(
-        mixins = {CDIMixIn.class, HTTPMixIn.class},
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-        scanners = TransformSwitchYardScanner.class)
+    mixins = { CDIMixIn.class, HTTPMixIn.class },
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    scanners = TransformSwitchYardScanner.class)
 public class WebServiceTest {
 
     private HTTPMixIn httpMixIn;
@@ -41,4 +41,3 @@ public class WebServiceTest {
         httpMixIn.postResourceAndTestXML("http://localhost:18001/quickstart-bean/OrderService", "/xml/soap-request.xml", "/xml/soap-response.xml");
     }
 }
-

@@ -22,8 +22,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name="sayHelloExternal", propOrder={"toWhom", "language", "day"})
-@XmlRootElement(name="sayHelloExternal", namespace="urn:switchyard-quickstart:external:1.0")
+@XmlType(name = "sayHelloExternal", propOrder = { "toWhom", "language", "day" })
+@XmlRootElement(name = "sayHelloExternal", namespace = "urn:switchyard-quickstart:external:1.0")
 public class SayHelloExternal {
 
     String toWhom;

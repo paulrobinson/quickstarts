@@ -29,5 +29,4 @@ public class GreetingServiceBean implements GreetingService {
         System.out.println("Hola " + name + " ;-) ");
     }
 
-
 }

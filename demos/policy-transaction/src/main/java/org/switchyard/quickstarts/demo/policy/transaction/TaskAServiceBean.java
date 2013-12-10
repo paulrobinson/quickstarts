@@ -31,23 +31,25 @@ import org.switchyard.policy.TransactionPolicy;
  *  current transaction, pass <code>TaskAServiceBean.ROLLBACK</code> as the command name.
  */
 @Service(TaskAService.class)
-@Requires(transaction = {TransactionPolicy.PROPAGATES_TRANSACTION,TransactionPolicy.MANAGED_TRANSACTION_GLOBAL})
+@Requires(transaction = { TransactionPolicy.PROPAGATES_TRANSACTION, TransactionPolicy.MANAGED_TRANSACTION_GLOBAL })
 public class TaskAServiceBean implements TaskAService {
-    
+
     /** rollback command for this subtask. */
     public static final String ROLLBACK = WorkServiceBean.ROLLBACK + ".A";
 
     private static final String JNDI_TRANSACTION_MANAGER = "java:jboss/TransactionManager";
-    
+
     // counts the number of times a rollback has occurred
     private int _rollbackCounter = 0;
-    
-    @Inject @Reference("StoreAService") @Requires(transaction=TransactionPolicy.PROPAGATES_TRANSACTION)
+
+    @Inject
+    @Reference("StoreAService")
+    @Requires(transaction = TransactionPolicy.PROPAGATES_TRANSACTION)
     private StoreService _storeA;
-    
+
     @Override
     public final void doTask(final String command) {
-        
+
         print("Received command =>  " + command);
         Transaction t = null;
         try {
@@ -61,7 +63,7 @@ public class TaskAServiceBean implements TaskAService {
         }
 
         _storeA.store(command);
-        
+
         if (command.contains(ROLLBACK)) {
             try {
                 if (++_rollbackCounter % 4 != 0) {
@@ -75,13 +77,13 @@ public class TaskAServiceBean implements TaskAService {
             }
         }
     }
-    
+
     private Transaction getCurrentTransaction() throws Exception {
         TransactionManager tm = (TransactionManager)
-                new InitialContext().lookup(JNDI_TRANSACTION_MANAGER);
+            new InitialContext().lookup(JNDI_TRANSACTION_MANAGER);
         return tm.getTransaction();
     }
-        
+
     private void print(String message) {
         System.out.println(":: TaskAService :: " + message);
     }

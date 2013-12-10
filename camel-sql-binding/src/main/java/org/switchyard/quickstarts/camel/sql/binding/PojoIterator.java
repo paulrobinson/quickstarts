@@ -38,9 +38,12 @@ public class PojoIterator implements Iterator<Object> {
     @Override
     public Object next() {
         switch (_pointer++) {
-        case 0: return _greeting.getReceiver();
-        case 1: return _greeting.getSender();
-        case 2: return _greeting.getId();
+            case 0:
+                return _greeting.getReceiver();
+            case 1:
+                return _greeting.getSender();
+            case 2:
+                return _greeting.getId();
         }
         return null;
     }

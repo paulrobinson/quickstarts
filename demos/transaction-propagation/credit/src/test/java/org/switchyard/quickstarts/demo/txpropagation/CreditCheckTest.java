@@ -29,7 +29,7 @@ import org.switchyard.test.SwitchYardRunner;
 import org.switchyard.test.SwitchYardTestCaseConfig;
 
 @RunWith(SwitchYardRunner.class)
-@SwitchYardTestCaseConfig(mixins = {CDIMixIn.class, TransactionMixIn.class}, config = SwitchYardTestCaseConfig.SWITCHYARD_XML)
+@SwitchYardTestCaseConfig(mixins = { CDIMixIn.class, TransactionMixIn.class }, config = SwitchYardTestCaseConfig.SWITCHYARD_XML)
 public class CreditCheckTest {
 
     @ServiceOperation("RuleService")

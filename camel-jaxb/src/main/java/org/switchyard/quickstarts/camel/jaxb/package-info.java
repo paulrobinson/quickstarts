@@ -16,3 +16,4 @@
  */
 @javax.xml.bind.annotation.XmlSchema(namespace = "urn:switchyard-quickstart:camel-jaxb:1.0")
 package org.switchyard.quickstarts.camel.jaxb;
+

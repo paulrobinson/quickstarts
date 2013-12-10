@@ -35,54 +35,54 @@ import org.switchyard.component.test.mixins.cdi.CDIMixIn;
 
 @RunWith(SwitchYardRunner.class)
 @SwitchYardTestCaseConfig(
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-        mixins = CDIMixIn.class)
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    mixins = CDIMixIn.class)
 public class JaxbTransformationTest {
 
     @ServiceOperation("OrderService.submitOrder")
     private Invoker submitOrder;
 
     private SwitchYardTestKit _testKit;
-    
+
     public static final QName FROM_TYPE =
         new QName("urn:switchyard-quickstart:transform-jaxb:1.0", "order");
     public static final QName TO_TYPE =
         new QName("urn:switchyard-quickstart:transform-jaxb:1.0", "orderAck");
-    
+
     // Paths to XML test files
     final String ORDER_XML = "/xml/order.xml";
     final String ORDER_ACK_XML = "/xml/orderAck.xml";
-    
+
     @Test
     public void testJaxbOrderToXML() throws Exception {
         Order order = new Order();
         order.setItemId("BUTTER");
         order.setOrderId("PO-19838-XYZ");
         order.setQuantity(200);
-        
-        JAXBContext jaxbContext = JAXBContext.newInstance(new Class[] {Order.class});
+
+        JAXBContext jaxbContext = JAXBContext.newInstance(new Class[] { Order.class });
         StringWriter resultWriter = new StringWriter();
         Marshaller marshaller = jaxbContext.createMarshaller();
-        
+
         marshaller.marshal(order, resultWriter);
         _testKit.compareXMLToResource(resultWriter.toString(), ORDER_XML);
     }
-    
+
     @Test
     public void testJaxbOrderAckToXML() throws Exception {
         OrderAck orderAck = new OrderAck();
         orderAck.setAccepted(Boolean.TRUE);
         orderAck.setOrderId("PO-19838-XYZ");
         orderAck.setStatus("Order Accepted");
-        
-        JAXBContext jaxbContext = JAXBContext.newInstance(new Class[] {OrderAck.class});
+
+        JAXBContext jaxbContext = JAXBContext.newInstance(new Class[] { OrderAck.class });
         StringWriter resultWriter = new StringWriter();
         Marshaller marshaller = jaxbContext.createMarshaller();
-        
+
         marshaller.marshal(orderAck, resultWriter);
         _testKit.compareXMLToResource(resultWriter.toString(), ORDER_ACK_XML);
     }
-    
+
     @Test
     public void testTransformXMLtoJava() throws Exception {
         OrderAck orderAck = submitOrder

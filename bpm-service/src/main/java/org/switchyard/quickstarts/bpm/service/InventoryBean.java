@@ -22,19 +22,19 @@ import java.util.Map;
 import org.switchyard.component.bean.Service;
 import org.switchyard.quickstarts.bpm.service.data.Order;
 
-@Service(Inventory.class) 
+@Service(Inventory.class)
 public class InventoryBean implements org.switchyard.quickstarts.bpm.service.Inventory {
 
     private final Map<String, Integer> inventory = new HashMap<String, Integer>();
-    
+
     public InventoryBean() {
         inventory.put("cowbell", 100);
     }
-    
+
     @Override
     public boolean checkAvailability(Order order) {
         return inventory.containsKey(order.getItemId().toLowerCase()) &&
-               inventory.get(order.getItemId().toLowerCase()) >= order.getQuantity();
+            inventory.get(order.getItemId().toLowerCase()) >= order.getQuantity();
     }
 
 }

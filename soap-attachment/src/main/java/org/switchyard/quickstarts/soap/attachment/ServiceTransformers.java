@@ -30,22 +30,22 @@ import org.w3c.dom.NodeList;
 public class ServiceTransformers {
 
     private static String SOAP_TEMPLATE =
-              "<ns2:echoImage xmlns:ns2=\"urn:switchyard-quickstart:soap-attachment:1.0\">"
+        "<ns2:echoImage xmlns:ns2=\"urn:switchyard-quickstart:soap-attachment:1.0\">"
             + "cid:%s"
             + "</ns2:echoImage>";
 
     private static String SOAP_RESPONSE_TEMPLATE =
-              "<ns2:echoImageResponse xmlns:ns2=\"urn:switchyard-quickstart:soap-attachment:1.0\">"
+        "<ns2:echoImageResponse xmlns:ns2=\"urn:switchyard-quickstart:soap-attachment:1.0\">"
             + "cid:%s"
             + "</ns2:echoImageResponse>";
 
     private static String SOAP_EXTERNAL_TEMPLATE =
-              "<ns2:echoImage xmlns:ns2=\"urn:switchyard-quickstart:soap-attachment-external:1.0\">"
+        "<ns2:echoImage xmlns:ns2=\"urn:switchyard-quickstart:soap-attachment-external:1.0\">"
             + "cid:%s"
             + "</ns2:echoImage>";
 
     private static String SOAP_EXTERNAL_RESPONSE_TEMPLATE =
-              "<ns2:echoImageResponse xmlns:ns2=\"urn:switchyard-quickstart:soap-attachment-external:1.0\">"
+        "<ns2:echoImageResponse xmlns:ns2=\"urn:switchyard-quickstart:soap-attachment-external:1.0\">"
             + "cid:%s"
             + "</ns2:echoImageResponse>";
 

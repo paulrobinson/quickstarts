@@ -34,12 +34,12 @@ public class DealerTest {
 
     @ServiceOperation("Dealer")
     private Invoker service;
-    
+
     private SwitchYardTestKit testKit;
-    
+
     @Before
     public void setUp() {
-        
+
     }
 
     @Test
@@ -66,7 +66,7 @@ public class DealerTest {
         offer.setCar(car);
         offer.setApplication(app);
         offer.setAmount(450.00);
-        
+
         // configure our proxy for the service reference
         MockHandler creditService = testKit.replaceService("CreditCheck");
         Application reply = new Application();
@@ -75,7 +75,7 @@ public class DealerTest {
 
         // Invoke the service
         Deal deal = service.operation("offer").sendInOut(offer)
-                .getContent(Deal.class);
+            .getContent(Deal.class);
 
         // verify the deal is rejected
         Assert.assertTrue(deal.isAccepted());

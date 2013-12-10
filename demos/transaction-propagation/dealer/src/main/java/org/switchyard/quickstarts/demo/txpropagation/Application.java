@@ -25,7 +25,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="applications")
+@Table(name = "applications")
 public class Application implements Serializable {
 
     private static final long serialVersionUID = -6017970731124757419L;
@@ -33,7 +33,7 @@ public class Application implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    
+
     private String name;
 
     private int creditScore;
@@ -43,7 +43,7 @@ public class Application implements Serializable {
     public long getId() {
         return id;
     }
-    
+
     public String getName() {
         return name;
     }

@@ -23,7 +23,7 @@ package org.switchyard.quickstarts.camel.ftp.binding;
  */
 public interface GreetingService {
 
-	/**
+    /**
      * Prints a greeting message using the passed in name.
      *
      * @param name the name of the person to be greeted.

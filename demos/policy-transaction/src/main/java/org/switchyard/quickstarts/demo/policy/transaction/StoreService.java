@@ -20,7 +20,7 @@ package org.switchyard.quickstarts.demo.policy.transaction;
  * Store Service.
  */
 public interface StoreService {
-    
+
     /**
      * Store a message.
      * @param message message

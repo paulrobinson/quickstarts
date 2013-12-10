@@ -29,8 +29,8 @@ import org.switchyard.remote.http.HttpInvoker;
 public final class RemoteClient {
 
     private static final QName SERVICE = new QName(
-            "urn:switchyard-quickstart-demo-cluster-dealer:1.0",
-            "Dealer");
+        "urn:switchyard-quickstart-demo-cluster-dealer:1.0",
+        "Dealer");
     private static final String URL = "http://localhost:8080/switchyard-remote";
 
     /**
@@ -59,7 +59,7 @@ public final class RemoteClient {
         RemoteMessage reply = invoker.invoke(message);
         if (reply.isFault()) {
             System.err.println("Oops ... something bad happened.  "
-                    + reply.getContent());
+                + reply.getContent());
         } else {
             Deal deal = (Deal) reply.getContent();
             out.println("==================================");

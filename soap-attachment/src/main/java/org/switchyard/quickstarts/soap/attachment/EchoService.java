@@ -18,5 +18,5 @@ package org.switchyard.quickstarts.soap.attachment;
 
 public interface EchoService {
 
-	String echoImage(String fileName);
+    String echoImage(String fileName);
 }

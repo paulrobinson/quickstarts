@@ -58,7 +58,7 @@ public class DealerTest {
         offer.setAmount(450.00);
 
         Deal deal = service.operation("offer").sendInOut(offer)
-                .getContent(Deal.class);
+            .getContent(Deal.class);
 
         // verify the deal is rejected
         Assert.assertTrue(deal.isAccepted());

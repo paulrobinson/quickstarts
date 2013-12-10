@@ -21,7 +21,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 @XmlRootElement(name = "ItemNotAvailable", namespace = "urn:switchyard-quickstart:soap-addressing:1.0")
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ItemNotAvailable", namespace = "urn:switchyard-quickstart:soap-addressing:1.0")

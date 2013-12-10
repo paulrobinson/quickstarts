@@ -27,7 +27,7 @@ public final class AirportManager {
     /**
      * Cities which can be used to have flight.
      */
-    public static final String[] CITIES = {"Brno", "Prague", "London" };
+    public static final String[] CITIES = { "Brno", "Prague", "London" };
 
     private AirportManager() {
 

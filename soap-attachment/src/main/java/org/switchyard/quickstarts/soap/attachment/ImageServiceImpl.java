@@ -21,7 +21,7 @@ import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
 import javax.xml.ws.WebServiceException;
 
-@WebService(name="ImageService", targetNamespace="urn:switchyard-quickstart:soap-attachment:1.0")
+@WebService(name = "ImageService", targetNamespace = "urn:switchyard-quickstart:soap-attachment:1.0")
 @SOAPBinding(style = SOAPBinding.Style.DOCUMENT, parameterStyle = SOAPBinding.ParameterStyle.BARE)
 public class ImageServiceImpl implements ImageService {
 

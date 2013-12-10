@@ -38,7 +38,8 @@ public class OrderServiceImpl implements OrderService {
     private static Integer orderNo = 0;
     private ConcurrentMap<Integer, Order> _orders = new ConcurrentHashMap<Integer, Order>();
 
-    @Inject @Reference
+    @Inject
+    @Reference
     private Warehouse _warehouse;
 
     public OrderServiceImpl() {
@@ -110,7 +111,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     public String createInventory() throws Exception {
-        System.out.println(".......................... createInventory" );
+        System.out.println(".......................... createInventory");
         _warehouse.addItem(new Item(1, "Hydrogen Atom - No, we are not kidding!"));
         _warehouse.addItem(new Item(2, "Handcrafted Copper Plate"));
         _warehouse.addItem(new Item(3, "Einstein's Bust - Talks about your future :)"));

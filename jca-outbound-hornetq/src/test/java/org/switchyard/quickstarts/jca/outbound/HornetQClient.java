@@ -24,7 +24,6 @@ import javax.jms.TextMessage;
 
 import org.switchyard.component.test.mixins.hornetq.HornetQMixIn;
 
-
 /**
  * HornetQ client that uses JMS API to connect to a remote server, send
  * messages to a order queue and receive from shipping queue and filling stock queue.
@@ -33,33 +32,33 @@ import org.switchyard.component.test.mixins.hornetq.HornetQMixIn;
  *
  */
 public final class HornetQClient {
-    
+
     private static final String ORDER_QUEUE = "OrderQueue";
     private static final String SHIPPING_QUEUE = "ShippingQueue";
     private static final String FILLING_STOCK_QUEUE = "FillingStockQueue";
     private static final String USER = "guest";
     private static final String PASSWD = "guestp.1";
-    
+
     /**
      * Private no-args constructor.
      */
     private HornetQClient() {
     }
-    
+
     /**
      * Only execution point for this application.
      * @param ignored not used.
      * @throws Exception if something goes wrong.
      */
     public static void main(final String[] args) throws Exception {
-        String[] orders = {"BREAD", "PIZZA", "JAM", "POTATO", "MILK", "JAM"};
+        String[] orders = { "BREAD", "PIZZA", "JAM", "POTATO", "MILK", "JAM" };
         if (args.length != 0) {
             orders = args;
         }
-        
+
         HornetQMixIn hqMixIn = new HornetQMixIn(false)
-                                    .setUser(USER)
-                                    .setPassword(PASSWD);
+            .setUser(USER)
+            .setPassword(PASSWD);
         hqMixIn.initialize();
 
         try {
@@ -71,7 +70,7 @@ public final class HornetQClient {
                 producer.send(message);
             }
             session.close();
-            
+
             session = hqMixIn.createJMSSession();
             System.out.println("* * *  SHIPPING ORDERS  * * *");
             MessageConsumer consumer = session.createConsumer(HornetQMixIn.getJMSQueue(SHIPPING_QUEUE));
@@ -80,7 +79,7 @@ public final class HornetQClient {
                 System.out.println(" - " + hqMixIn.readStringFromJMSMessage(msg));
             }
             System.out.println();
-            
+
             System.out.println("* * *  PENDING ORDERS (FILLING STOCK)  * * *");
             consumer = session.createConsumer(HornetQMixIn.getJMSQueue(FILLING_STOCK_QUEUE));
             while ((msg = consumer.receive(1000)) != null) {

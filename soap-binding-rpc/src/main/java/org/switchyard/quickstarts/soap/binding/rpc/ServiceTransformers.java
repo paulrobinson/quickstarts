@@ -30,25 +30,25 @@ import org.w3c.dom.NodeList;
 public class ServiceTransformers {
 
     private static String SOAP_TEMPLATE =
-              "<ns2:sayHello xmlns:ns2=\"urn:switchyard-quickstart:soap-binding-rpc:1.0\">"
+        "<ns2:sayHello xmlns:ns2=\"urn:switchyard-quickstart:soap-binding-rpc:1.0\">"
             + "    <toWhom>%s</toWhom>"
             + "    <language>%s</language>"
             + "</ns2:sayHello>";
 
     private static String SOAP_RESPONSE_TEMPLATE =
-              "<ns2:sayHelloResponse xmlns:ns2=\"urn:switchyard-quickstart:soap-binding-rpc:1.0\">"
+        "<ns2:sayHelloResponse xmlns:ns2=\"urn:switchyard-quickstart:soap-binding-rpc:1.0\">"
             + "    <return>%s</return>"
             + "</ns2:sayHelloResponse>";
 
     private static String SOAP_TEMPLATE_EXTERNAL =
-              "<ns2:sayHello xmlns:ns2=\"urn:switchyard-quickstart:external:1.0\">"
+        "<ns2:sayHello xmlns:ns2=\"urn:switchyard-quickstart:external:1.0\">"
             + "    <toWhom>%s</toWhom>"
             + "    <language>%s</language>"
             + "    <day>%s</day>"
             + "</ns2:sayHello>";
 
     private static String SOAP_RESPONSE_TEMPLATE_EXTERNAL =
-              "<ns2:sayHelloResponse xmlns:ns2=\"urn:switchyard-quickstart:external:1.0\">"
+        "<ns2:sayHelloResponse xmlns:ns2=\"urn:switchyard-quickstart:external:1.0\">"
             + "    <return>%s</return>"
             + "</ns2:sayHelloResponse>";
 
@@ -103,7 +103,7 @@ public class ServiceTransformers {
         }
         return value;
     }
-    
+
     private Element toElement(String xml) {
         DOMResult dom = new DOMResult();
         try {
@@ -113,5 +113,5 @@ public class ServiceTransformers {
         }
         return ((Document) dom.getNode()).getDocumentElement();
     }
-    
+
 }

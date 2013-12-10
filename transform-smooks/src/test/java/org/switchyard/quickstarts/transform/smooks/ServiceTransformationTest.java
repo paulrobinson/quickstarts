@@ -41,7 +41,6 @@ public class ServiceTransformationTest {
 
     private SwitchYardTestKit _testKit;
 
-
     // Message types being transformed
     public static final QName FROM_TYPE =
         new QName("urn:switchyard-quickstart:transform-smooks:1.0", "submitOrder");

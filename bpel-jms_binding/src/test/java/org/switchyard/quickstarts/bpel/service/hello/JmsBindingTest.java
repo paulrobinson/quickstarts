@@ -38,18 +38,17 @@ import org.switchyard.component.test.mixins.hornetq.HornetQMixIn;
  */
 @RunWith(SwitchYardRunner.class)
 @SwitchYardTestCaseConfig(
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-        mixins = {CDIMixIn.class, HornetQMixIn.class}
-)
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    mixins = { CDIMixIn.class, HornetQMixIn.class })
 public class JmsBindingTest {
-    
+
     private static final String REQUEST_NAME = "HelloRequestQueue";
     private static final String REPLY_NAME = "HelloReplyQueue";
     private static final String NAME = "Tomo";
-    
+
     private SwitchYardTestKit _testKit;
     private HornetQMixIn _hqMixIn;
-    
+
     /**
      * Send a message to HelloRequestQueue and receive from HelloResponseQueue.
      */
@@ -65,21 +64,21 @@ public class JmsBindingTest {
         String reply = _hqMixIn.readStringFromJMSMessage(message);
         SwitchYardTestKit.compareXMLToString(reply, createExpectedReply(NAME));
     }
-    
+
     @Before
     public void getHornetQMixIn() {
         _hqMixIn = _testKit.getMixIn(HornetQMixIn.class);
     }
-    
+
     private static String createPayload(String name) {
         return "<exam:sayHello xmlns:exam=\"http://www.jboss.org/bpel/examples\">"
-                + "<exam:input>" + name + "</exam:input>"
-                + "</exam:sayHello>";
+            + "<exam:input>" + name + "</exam:input>"
+            + "</exam:sayHello>";
     }
 
     private static String createExpectedReply(String name) {
         return "<sayHelloResponse xmlns=\"http://www.jboss.org/bpel/examples\">"
-                + "<tns:result xmlns:tns=\"http://www.jboss.org/bpel/examples\">Hello " + name + "</tns:result>"
-                + "</sayHelloResponse>";
+            + "<tns:result xmlns:tns=\"http://www.jboss.org/bpel/examples\">Hello " + name + "</tns:result>"
+            + "</sayHelloResponse>";
     }
 }

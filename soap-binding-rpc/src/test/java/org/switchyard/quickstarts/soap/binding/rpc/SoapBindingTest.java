@@ -31,9 +31,9 @@ import org.switchyard.transform.config.model.TransformSwitchYardScanner;
 
 @RunWith(SwitchYardRunner.class)
 @SwitchYardTestCaseConfig(
-        mixins = {CDIMixIn.class, HTTPMixIn.class},
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-        scanners = {BeanSwitchYardScanner.class, TransformSwitchYardScanner.class })
+    mixins = { CDIMixIn.class, HTTPMixIn.class },
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    scanners = { BeanSwitchYardScanner.class, TransformSwitchYardScanner.class })
 public class SoapBindingTest {
 
     private static final String SWITCHYARD_WEB_SERVICE = "http://localhost:8081/soap-binding-rpc/HelloWorldWSService";

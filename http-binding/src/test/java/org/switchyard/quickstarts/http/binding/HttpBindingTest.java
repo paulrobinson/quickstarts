@@ -33,21 +33,21 @@ import org.switchyard.transform.config.model.TransformSwitchYardScanner;
  * @author Magesh Kumar B <mageshbk@jboss.com> (C) 2012 Red Hat Inc.
  */
 @SwitchYardTestCaseConfig(
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML, 
-        mixins = {CDIMixIn.class, HTTPMixIn.class},
-        scanners = TransformSwitchYardScanner.class)
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    mixins = { CDIMixIn.class, HTTPMixIn.class },
+    scanners = TransformSwitchYardScanner.class)
 @RunWith(SwitchYardRunner.class)
 public class HttpBindingTest {
 
     private static final String BASE_URL = "http://localhost:8081/http-binding";
 
     private HTTPMixIn http;
-    
+
     @BeforeDeploy
     public void setProperties() {
         System.setProperty("org.switchyard.component.http.standalone.port", "8081");
     }
-    
+
     /**
      * Ignore until this is fixed http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=7189193
      */

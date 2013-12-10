@@ -34,6 +34,6 @@ public class Transformers {
     @Transformer(from = "java:org.jboss.resteasy.client.core.BaseClientResponse")
     public Item transform(BaseClientResponse<Item> from) {
         from.setReturnType(Item.class);
-        return (Item)from.getEntity();
+        return (Item) from.getEntity();
     }
 }

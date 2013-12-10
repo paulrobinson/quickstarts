@@ -17,7 +17,7 @@
 package org.switchyard.quickstarts.demo.multiapp;
 
 public interface OrderService {
-    
+
     OrderAck submitOrder(Order order);
-    
+
 }

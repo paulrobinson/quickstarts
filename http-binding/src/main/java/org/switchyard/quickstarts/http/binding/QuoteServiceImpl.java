@@ -29,7 +29,8 @@ import org.switchyard.component.bean.Service;
 @Service(QuoteService.class)
 public class QuoteServiceImpl implements QuoteService {
 
-    @Inject @Reference("Symbol")
+    @Inject
+    @Reference("Symbol")
     private SymbolService _symbolService;
 
     public QuoteServiceImpl() {

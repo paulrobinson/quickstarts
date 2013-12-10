@@ -30,7 +30,7 @@ public class HttpBindingClient {
     private static final String BASE_URL = "http://localhost:8080/http-binding";
 
     public static void main(String[] args) throws Exception {
-        String command =  null;
+        String command = null;
         if (args.length == 0) {
             System.out.println("Usage: HttpBindingClient stock-quote-symbol");
             return;

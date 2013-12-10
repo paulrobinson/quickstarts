@@ -27,7 +27,7 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="offers")
+@Table(name = "offers")
 public class Offer implements Serializable {
 
     private static final long serialVersionUID = -3482383730961824318L;
@@ -35,19 +35,19 @@ public class Offer implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    
-    @OneToOne(cascade=CascadeType.ALL)
+
+    @OneToOne(cascade = CascadeType.ALL)
     private Application application;
 
-    @OneToOne(cascade=CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL)
     private Car car;
-    
+
     private double amount;
 
     public long getId() {
         return id;
     }
-    
+
     public Application getApplication() {
         return application;
     }

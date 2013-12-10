@@ -31,9 +31,9 @@ import org.switchyard.transform.config.model.TransformSwitchYardScanner;
 
 @RunWith(SwitchYardRunner.class)
 @SwitchYardTestCaseConfig(
-        mixins = {CDIMixIn.class},
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-        scanners = {BeanSwitchYardScanner.class, TransformSwitchYardScanner.class })
+    mixins = { CDIMixIn.class },
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    scanners = { BeanSwitchYardScanner.class, TransformSwitchYardScanner.class })
 public class SoapMtomTest {
 
     @Test

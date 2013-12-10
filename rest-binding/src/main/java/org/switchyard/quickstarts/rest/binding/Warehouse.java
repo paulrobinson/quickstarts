@@ -24,8 +24,12 @@ package org.switchyard.quickstarts.rest.binding;
 public interface Warehouse {
 
     Item getItem(Integer itemId);
+
     String addItem(Item item) throws Exception;
+
     String updateItem(Item item) throws Exception;
+
     String removeItem(Integer itemId) throws Exception;
+
     Integer getItemCount();
 }

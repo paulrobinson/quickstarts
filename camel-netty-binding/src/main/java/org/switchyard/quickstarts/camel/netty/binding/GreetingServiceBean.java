@@ -16,7 +16,6 @@
  */
 package org.switchyard.quickstarts.camel.netty.binding;
 
-
 /**
  * A POJO Service implementation.
  *

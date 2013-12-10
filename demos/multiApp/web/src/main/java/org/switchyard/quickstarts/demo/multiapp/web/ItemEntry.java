@@ -33,29 +33,29 @@ public class ItemEntry {
     @Inject
     @Reference
     private InventoryService inventory;
-    
+
     private Item item = new Item();
-    
+
     public void setItemId(String itemId) {
         item.setItemId(itemId);
     }
-    
+
     public String getItemId() {
         return item.getItemId();
     }
-    
+
     public void setName(String name) {
         item.setName(name);
     }
-    
+
     public String getName() {
         return item.getName();
     }
-    
+
     public void setQuantity(int quantity) {
         item.setQuantity(quantity);
     }
-    
+
     public int getQuantity() {
         return item.getQuantity();
     }
@@ -63,6 +63,6 @@ public class ItemEntry {
     public void create() {
         inventory.createItem(item);
         FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(
-                "Item " + getItemId() + " has been added."));
+            "Item " + getItemId() + " has been added."));
     }
 }

@@ -43,7 +43,7 @@ public class Transformers {
     public Element transformBooleanToVerifyResponse(boolean b) {
         String xml = new StringBuilder()
             .append("<urn:verifyResponse xmlns:urn='urn:switchyard-quickstart:rules-interview:0.1.0'>")
-            .append(    "<return>").append(b).append("</return>")
+            .append("<return>").append(b).append("</return>")
             .append("</urn:verifyResponse>")
             .toString();
         return toElement(xml);
@@ -65,7 +65,7 @@ public class Transformers {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return ((Document)dom.getNode()).getDocumentElement();
+        return ((Document) dom.getNode()).getDocumentElement();
     }
 
 }

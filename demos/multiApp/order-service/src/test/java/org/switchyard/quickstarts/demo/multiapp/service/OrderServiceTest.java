@@ -40,7 +40,7 @@ public class OrderServiceTest {
             .setOrderId("ORDER01")
             .setItemId("BUTTER")
             .setQuantity(100);
-        
+
         OrderAck testAck = submitOrder
             .sendInOut(testOrder)
             .getContent(OrderAck.class);

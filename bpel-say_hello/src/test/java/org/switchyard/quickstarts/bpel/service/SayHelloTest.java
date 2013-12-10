@@ -27,20 +27,20 @@ import org.switchyard.test.SwitchYardTestKit;
 
 @RunWith(SwitchYardRunner.class)
 @SwitchYardTestCaseConfig(
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-        mixins = CDIMixIn.class)
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    mixins = CDIMixIn.class)
 public class SayHelloTest {
-    
+
     @ServiceOperation("SayHelloService")
     private Invoker sayHello;
-    
+
     private SwitchYardTestKit testKit;
-    
+
     @Test
     public void testHello() throws Exception {
         String requestTxt = testKit.readResourceString("xml/xml-request.xml");
         String replyMsg = sayHello.sendInOut(requestTxt).getContent(String.class);
         testKit.compareXMLToResource(replyMsg, "xml/xml-response.xml");
     }
-    
+
 }

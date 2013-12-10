@@ -42,9 +42,8 @@ import org.switchyard.test.SwitchYardTestKit;
 import org.switchyard.test.mixins.amqp.AMQPMixIn;
 
 @SwitchYardTestCaseConfig(
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-        mixins = {CDIMixIn.class, AMQPMixIn.class}
-)
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    mixins = { CDIMixIn.class, AMQPMixIn.class })
 @RunWith(SwitchYardRunner.class)
 public class CamelAmqpBindingTest {
 
@@ -53,7 +52,7 @@ public class CamelAmqpBindingTest {
     private SwitchYardTestKit _testKit;
     private AMQPMixIn _mixin;
 
-	private Connection _connection;
+    private Connection _connection;
 
     @Before
     public void setUp() throws Exception {

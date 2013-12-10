@@ -43,7 +43,7 @@ public class OrderInterceptor implements ExchangeInterceptor {
     public void after(String target, Exchange exchange) throws HandlerException {
         // We only want to intercept successful replies from OrderService
         if (exchange.getProvider().getName().getLocalPart().equals("OrderService")
-                && ExchangeState.OK.equals(exchange.getState())) {
+            && ExchangeState.OK.equals(exchange.getState())) {
             OrderAck orderAck = exchange.getMessage().getContent(OrderAck.class);
             orderAck.setStatus(orderAck.getStatus() + " [intercepted]");
         }
@@ -51,7 +51,7 @@ public class OrderInterceptor implements ExchangeInterceptor {
 
     @Override
     public List<String> getTargets() {
-       return Arrays.asList(PROVIDER);
+        return Arrays.asList(PROVIDER);
     }
 
 }

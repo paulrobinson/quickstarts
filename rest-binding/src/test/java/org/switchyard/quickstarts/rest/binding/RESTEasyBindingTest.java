@@ -35,10 +35,9 @@ import org.switchyard.transform.config.model.TransformSwitchYardScanner;
  * @author Magesh Kumar B <mageshbk@jboss.com> (C) 2012 Red Hat Inc.
  */
 @SwitchYardTestCaseConfig(
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML, 
-        mixins = {CDIMixIn.class, HTTPMixIn.class},
-        scanners = TransformSwitchYardScanner.class
-)
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    mixins = { CDIMixIn.class, HTTPMixIn.class },
+    scanners = TransformSwitchYardScanner.class)
 @RunWith(SwitchYardRunner.class)
 public class RESTEasyBindingTest {
 
@@ -49,7 +48,7 @@ public class RESTEasyBindingTest {
         System.setProperty("org.switchyard.component.resteasy.standalone.port", "8081");
         System.setProperty("org.switchyard.component.resteasy.standalone.path", "");
     }
-    
+
     /**
      * This Quickstart test exclusively uses Netty server due to buggy JDK HttpServer.
      * See https://issues.jboss.org/browse/RESTEASY-734
@@ -119,88 +118,88 @@ public class RESTEasyBindingTest {
 
     private static final String SUCCESS = "SUCCESS";
     private static final String ORDER = "<order>"
-                                       + "    <orderId>1</orderId>"
-                                       + "</order>";
+        + "    <orderId>1</orderId>"
+        + "</order>";
     private static final String ORDER1 = "<order>"
-                                       + "    <orderId>1</orderId>"
-                                       + "    <orderItem>"
-                                       + "        <item>"
-                                       + "            <itemId>1</itemId>"
-                                       + "         </item>"
-                                       + "         <quantity>10</quantity>"
-                                       + "     </orderItem>"
-                                       + "</order>";
+        + "    <orderId>1</orderId>"
+        + "    <orderItem>"
+        + "        <item>"
+        + "            <itemId>1</itemId>"
+        + "         </item>"
+        + "         <quantity>10</quantity>"
+        + "     </orderItem>"
+        + "</order>";
     private static final String ORDER2 = "<order>"
-                                       + "    <orderId>1</orderId>"
-                                       + "    <orderItem>"
-                                       + "        <item>"
-                                       + "            <itemId>3</itemId>"
-                                       + "        </item>"
-                                       + "        <quantity>5</quantity>"
-                                       + "    </orderItem>"
-                                       + "    <orderItem>"
-                                       + "        <item>"
-                                       + "            <itemId>4</itemId>"
-                                       + "        </item>"
-                                       + "        <quantity>3</quantity>"
-                                       + "    </orderItem>"
-                                       + "</order>";
+        + "    <orderId>1</orderId>"
+        + "    <orderItem>"
+        + "        <item>"
+        + "            <itemId>3</itemId>"
+        + "        </item>"
+        + "        <quantity>5</quantity>"
+        + "    </orderItem>"
+        + "    <orderItem>"
+        + "        <item>"
+        + "            <itemId>4</itemId>"
+        + "        </item>"
+        + "        <quantity>3</quantity>"
+        + "    </orderItem>"
+        + "</order>";
     private static final String ORDER3 = "<order>"
-                                       + "    <orderId>1</orderId>"
-                                       + "    <orderItem>"
-                                       + "        <item>"
-                                       + "            <itemId>1</itemId>"
-                                       + "            <name>Hydrogen Atom - No, we are not kidding!</name>"
-                                       + "        </item>"
-                                       + "        <quantity>10</quantity>"
-                                       + "    </orderItem>"
-                                       + "    <orderItem>"
-                                       + "        <item>"
-                                       + "            <itemId>3</itemId>"
-                                       + "            <name>Einstein's Bust - Talks about your future :)</name>"
-                                       + "        </item>"
-                                       + "        <quantity>5</quantity>"
-                                       + "    </orderItem>"
-                                       + "    <orderItem>"
-                                       + "        <item>"
-                                       + "            <itemId>4</itemId>"
-                                       + "            <name>Time Machine</name>"
-                                       + "        </item>"
-                                       + "        <quantity>3</quantity>"
-                                       + "    </orderItem>"
-                                       + "</order>";
+        + "    <orderId>1</orderId>"
+        + "    <orderItem>"
+        + "        <item>"
+        + "            <itemId>1</itemId>"
+        + "            <name>Hydrogen Atom - No, we are not kidding!</name>"
+        + "        </item>"
+        + "        <quantity>10</quantity>"
+        + "    </orderItem>"
+        + "    <orderItem>"
+        + "        <item>"
+        + "            <itemId>3</itemId>"
+        + "            <name>Einstein's Bust - Talks about your future :)</name>"
+        + "        </item>"
+        + "        <quantity>5</quantity>"
+        + "    </orderItem>"
+        + "    <orderItem>"
+        + "        <item>"
+        + "            <itemId>4</itemId>"
+        + "            <name>Time Machine</name>"
+        + "        </item>"
+        + "        <quantity>3</quantity>"
+        + "    </orderItem>"
+        + "</order>";
     private static final String ORDER4 = "<order>"
-                                       + "    <orderId>1</orderId>"
-                                       + "    <orderItem>"
-                                       + "        <item>"
-                                       + "            <itemId>3</itemId>"
-                                       + "            <name>Einstein's Bust - Talks about your future :)</name>"
-                                       + "        </item>"
-                                       + "        <quantity>5</quantity>"
-                                       + "    </orderItem>"
-                                       + "    <orderItem>"
-                                       + "        <item>"
-                                       + "            <itemId>4</itemId>"
-                                       + "            <name>Time Machine</name>"
-                                       + "        </item>"
-                                       + "        <quantity>3</quantity>"
-                                       + "    </orderItem>"
-                                       + "</order>";
+        + "    <orderId>1</orderId>"
+        + "    <orderItem>"
+        + "        <item>"
+        + "            <itemId>3</itemId>"
+        + "            <name>Einstein's Bust - Talks about your future :)</name>"
+        + "        </item>"
+        + "        <quantity>5</quantity>"
+        + "    </orderItem>"
+        + "    <orderItem>"
+        + "        <item>"
+        + "            <itemId>4</itemId>"
+        + "            <name>Time Machine</name>"
+        + "        </item>"
+        + "        <quantity>3</quantity>"
+        + "    </orderItem>"
+        + "</order>";
     private static final String ORDER5 = "<order>"
-                                       + "    <orderId>1</orderId>"
-                                       + "    <orderItem>"
-                                       + "        <item>"
-                                       + "            <itemId>3</itemId>"
-                                       + "            <name>Theory of relativity</name>"
-                                       + "        </item>"
-                                       + "        <quantity>5</quantity>"
-                                       + "    </orderItem>"
-                                       + "    <orderItem>"
-                                       + "        <item>"
-                                       + "            <itemId>4</itemId>"
-                                       + "            <name>Coffee Maker</name>"
-                                       + "        </item>"
-                                       + "        <quantity>3</quantity>"
-                                       + "    </orderItem>"
-                                       + "</order>";
+        + "    <orderId>1</orderId>"
+        + "    <orderItem>"
+        + "        <item>"
+        + "            <itemId>3</itemId>"
+        + "            <name>Theory of relativity</name>"
+        + "        </item>"
+        + "        <quantity>5</quantity>"
+        + "    </orderItem>"
+        + "    <orderItem>"
+        + "        <item>"
+        + "            <itemId>4</itemId>"
+        + "            <name>Coffee Maker</name>"
+        + "        </item>"
+        + "        <quantity>3</quantity>"
+        + "    </orderItem>"
+        + "</order>";
 }

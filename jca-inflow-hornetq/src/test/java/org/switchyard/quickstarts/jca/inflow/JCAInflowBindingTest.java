@@ -50,30 +50,30 @@ public class JCAInflowBindingTest {
     private static final String JAR_FILE = "target/switchyard-quickstart-jca-inflow-hornetq.jar";
 
     private static Logger _logger = Logger.getLogger(JCAInflowBindingTest.class);
-    
+
     @Resource(mappedName = "/ConnectionFactory")
     private ConnectionFactory _connectionFactory;
-    
+
     @Resource(mappedName = "JCAInflowGreetingServiceQueue")
     private Destination _destination;
-    
+
     @Deployment
     public static Archive<?> createTestArchive() {
         File artifact = new File(JAR_FILE);
         try {
             return ShrinkWrap.create(ZipImporter.class, artifact.getName())
-                         .importFrom(new ZipFile(artifact))
-                         .as(JavaArchive.class)
-                         .addAsManifestResource(new File(QUEUE_FILE));
+                .importFrom(new ZipFile(artifact))
+                .as(JavaArchive.class)
+                .addAsManifestResource(new File(QUEUE_FILE));
         } catch (Exception e) {
             throw new RuntimeException(JAR_FILE + " not found. Do \"mvn package\" before the test", e);
         }
     }
-    
+
     @Test
     public void triggerGreetingService() throws Exception {
         Connection conn = _connectionFactory.createConnection(USER, PASSWD);
-        
+
         try {
             Session session = conn.createSession(false, Session.AUTO_ACKNOWLEDGE);
             MessageProducer producer = session.createProducer(_destination);
@@ -83,7 +83,7 @@ public class JCAInflowBindingTest {
             session.close();
             _logger.info("Sent a message into " + _destination.toString() + " - following message should appear on server console:");
             _logger.info("Hello there dummy :-)");
-            
+
             session = conn.createSession(false, Session.AUTO_ACKNOWLEDGE);
             MessageConsumer consumer = session.createConsumer(_destination);
             conn.start();
@@ -92,11 +92,11 @@ public class JCAInflowBindingTest {
             conn.close();
         }
     }
-    
+
     private static final String PAYLOAD = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
-            + "<person xmlns=\"urn:switchyard-quickstart:jca-inflow-hornetq:0.1.0\">\n"
-            + "    <name>dummy</name>\n"
-            + "    <language>english</language>\n"
-            + "</person>\n";
-    
+        + "<person xmlns=\"urn:switchyard-quickstart:jca-inflow-hornetq:0.1.0\">\n"
+        + "    <name>dummy</name>\n"
+        + "    <language>english</language>\n"
+        + "</person>\n";
+
 }

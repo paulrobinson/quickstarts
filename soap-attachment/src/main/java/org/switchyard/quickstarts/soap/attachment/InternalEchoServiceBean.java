@@ -30,7 +30,8 @@ public class InternalEchoServiceBean implements InternalEchoService {
     @Inject
     private Message message;
 
-    @Inject @Reference
+    @Inject
+    @Reference
     private EchoService _echoService;
 
     @Override

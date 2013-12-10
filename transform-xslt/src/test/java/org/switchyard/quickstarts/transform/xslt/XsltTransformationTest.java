@@ -41,16 +41,16 @@ public class XsltTransformationTest {
     private Invoker submitOrder;
 
     private SwitchYardTestKit _testKit;
-    
+
     public static final QName FROM_TYPE =
         new QName("urn:switchyard-quickstart:transform-xslt:1.0", "order");
     public static final QName TO_TYPE =
         new QName("urn:switchyard-quickstart:transform-xslt:1.0", "orderAck");
-    
+
     // Paths to XML test files
     final String ORDER_XML = "/xml/order.xml";
     final String ORDER_ACK_XML = "/xml/orderAck.xml";
-    
+
     @Test
     public void testTransformXSLT() throws Exception {
         Element orderAck = submitOrder

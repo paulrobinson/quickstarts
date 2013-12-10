@@ -29,12 +29,12 @@ import org.switchyard.test.SwitchYardTestCaseConfig;
 import org.switchyard.component.test.mixins.cdi.CDIMixIn;
 
 @RunWith(SwitchYardRunner.class)
-@SwitchYardTestCaseConfig(mixins=CDIMixIn.class, config=SwitchYardTestCaseConfig.SWITCHYARD_XML)
+@SwitchYardTestCaseConfig(mixins = CDIMixIn.class, config = SwitchYardTestCaseConfig.SWITCHYARD_XML)
 public class ProcessOrderTest {
-    
+
     @ServiceOperation("ProcessOrder.submitOrder")
     private Invoker service;
-    
+
     @Test
     public void orderShipped() {
         Order order = new Order();
@@ -43,11 +43,11 @@ public class ProcessOrderTest {
         order.setQuantity(50);
 
         OrderAck ack = service.sendInOut(order).getContent(OrderAck.class);
-        
+
         Assert.assertTrue(ack.isAccepted());
         System.out.println(ack.getStatus());
     }
-    
+
     @Test
     public void orderOnHold() {
         Order order = new Order();
@@ -56,7 +56,7 @@ public class ProcessOrderTest {
         order.setQuantity(500);
 
         OrderAck ack = service.sendInOut(order).getContent(OrderAck.class);
-        
+
         Assert.assertFalse(ack.isAccepted());
         System.out.println(ack.getStatus());
     }

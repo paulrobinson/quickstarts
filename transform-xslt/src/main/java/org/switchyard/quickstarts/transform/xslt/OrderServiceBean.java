@@ -20,7 +20,7 @@ import org.switchyard.component.bean.Service;
 
 @Service(OrderService.class)
 public class OrderServiceBean implements OrderService {
-    
+
     @Override
     public String submitOrder(String order) {
         // This service implementation does not process the Order XML

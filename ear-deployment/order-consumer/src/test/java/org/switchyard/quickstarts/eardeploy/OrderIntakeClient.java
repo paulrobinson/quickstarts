@@ -32,13 +32,12 @@ import org.switchyard.component.test.mixins.hornetq.HornetQMixIn;
  * JMS-based client for submitting orders to the OrderService.
  */
 public final class OrderIntakeClient {
-    
-    
+
     private static final String ORDER_QUEUE_NAME = "EAROrderRequestQueue";
     private static final String ORDERACK_QUEUE_NAME = "EAROrderReplyQueue";
     private static final String USER = "guest";
     private static final String PASSWD = "guestp.1";
-   
+
     /**
      * Main routing for OrderIntakeClient
      * @param args command-line args
@@ -46,36 +45,36 @@ public final class OrderIntakeClient {
      */
     public static void main(final String[] args) throws Exception {
         HornetQMixIn hqMixIn = new HornetQMixIn(false)
-                                    .setUser(USER)
-                                    .setPassword(PASSWD);
+            .setUser(USER)
+            .setPassword(PASSWD);
         hqMixIn.initialize();
-        
+
         try {
             Session session = hqMixIn.getJMSSession();
             MessageProducer producer = session.createProducer(HornetQMixIn.getJMSQueue(ORDER_QUEUE_NAME));
-            
+
             String orderTxt = readFileContent(args[0]);
             System.out.println("Submitting Order" + "\n"
-                    + "----------------------------\n"
-                    + orderTxt
-                    + "\n----------------------------");
+                + "----------------------------\n"
+                + orderTxt
+                + "\n----------------------------");
             producer.send(hqMixIn.createJMSMessage(orderTxt));
             MessageConsumer consumer = session.createConsumer(HornetQMixIn.getJMSQueue(ORDERACK_QUEUE_NAME));
             System.out.println("Order submitted ... waiting for reply.");
-            TextMessage reply = (TextMessage)consumer.receive(3000);
+            TextMessage reply = (TextMessage) consumer.receive(3000);
             if (reply == null) {
                 System.out.println("No reply received.");
             } else {
                 System.out.println("Received reply" + "\n"
-                        + "----------------------------\n"
-                        + reply.getText()
-                        + "\n----------------------------");
+                    + "----------------------------\n"
+                    + reply.getText()
+                    + "\n----------------------------");
             }
         } finally {
             hqMixIn.uninitialize();
         }
     }
-    
+
     /**
      * Reads the contends of the {@link #MESSAGE_PAYLOAD} file.
      *

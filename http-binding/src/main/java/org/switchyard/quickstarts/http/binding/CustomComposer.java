@@ -38,7 +38,7 @@ public class CustomComposer extends HttpMessageComposer {
     public HttpBindingData decompose(Exchange exchange, HttpBindingData target) throws Exception {
         Object content = exchange.getMessage().getContent();
         if ((content instanceof String) && (content.equals(""))) {
-            exchange.getContext().setProperty(HttpContextMapper.HTTP_RESPONSE_STATUS, 404).addLabels(new String[]{EndpointLabel.HTTP.label()});
+            exchange.getContext().setProperty(HttpContextMapper.HTTP_RESPONSE_STATUS, 404).addLabels(new String[] { EndpointLabel.HTTP.label() });
         }
         target = super.decompose(exchange, target);
         return target;

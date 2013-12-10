@@ -43,7 +43,7 @@ public class InventoryServiceTest {
         Assert.assertNotNull(item);
         Assert.assertEquals(ITEM_ID, item.getItemId());
     }
-    
+
     @Test
     public void testItemLookupNonexistent() throws Exception {
         final String ITEM_ID = "SPAM";
@@ -56,6 +56,6 @@ public class InventoryServiceTest {
             Assert.fail("Invalid itemId accepted: " + ITEM_ID);
         } catch (InvocationFaultException ifEx) {
             Assert.assertTrue(ifEx.isType(ItemNotFoundException.class));
-        } 
+        }
     }
 }

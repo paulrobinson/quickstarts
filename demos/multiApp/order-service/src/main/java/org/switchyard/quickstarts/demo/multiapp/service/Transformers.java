@@ -45,10 +45,10 @@ public class Transformers {
      */
     @Transformer(from = "{urn:switchyard-quickstart-demo:multiapp:1.0}submitOrder")
     public Order transform(Element from) {
-       return new Order()
-           .setOrderId(getElementValue(from, ORDER_ID))
-           .setItemId(getElementValue(from, ITEM_ID))
-           .setQuantity(Integer.valueOf(getElementValue(from, QUANTITY)));
+        return new Order()
+            .setOrderId(getElementValue(from, ORDER_ID))
+            .setItemId(getElementValue(from, ITEM_ID))
+            .setQuantity(Integer.valueOf(getElementValue(from, QUANTITY)));
     }
 
     /**
@@ -88,11 +88,11 @@ public class Transformers {
         DOMResult dom = new DOMResult();
         try {
             TransformerFactory.newInstance().newTransformer().transform(
-                    new StreamSource(new StringReader(xml)), dom);
+                new StreamSource(new StringReader(xml)), dom);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
 
-        return ((Document)dom.getNode()).getDocumentElement();
+        return ((Document) dom.getNode()).getDocumentElement();
     }
 }

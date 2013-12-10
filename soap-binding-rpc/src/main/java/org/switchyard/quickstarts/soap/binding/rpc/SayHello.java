@@ -22,8 +22,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name="sayHello", propOrder={"toWhom", "language"})
-@XmlRootElement(name="sayHello", namespace="urn:switchyard-quickstart:soap-binding-rpc:1.0")
+@XmlType(name = "sayHello", propOrder = { "toWhom", "language" })
+@XmlRootElement(name = "sayHello", namespace = "urn:switchyard-quickstart:soap-binding-rpc:1.0")
 public class SayHello {
 
     String toWhom;

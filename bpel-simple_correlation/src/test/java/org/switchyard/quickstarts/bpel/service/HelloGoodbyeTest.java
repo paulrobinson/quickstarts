@@ -27,18 +27,18 @@ import org.switchyard.test.SwitchYardTestKit;
 
 @RunWith(SwitchYardRunner.class)
 @SwitchYardTestCaseConfig(
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-        mixins = {CDIMixIn.class})
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    mixins = { CDIMixIn.class })
 public class HelloGoodbyeTest {
-    
+
     @ServiceOperation("simpleCorrelationService.hello")
     private Invoker correlationHello;
-    
+
     @ServiceOperation("simpleCorrelationService.goodbye")
     private Invoker correlationGoodbye;
 
     private SwitchYardTestKit testKit;
-    
+
     @Test
     public void testHelloGoodbye() throws Exception {
         String requestTxt = testKit.readResourceString("xml/xml-hello_request1.xml");
@@ -49,5 +49,5 @@ public class HelloGoodbyeTest {
         replyMsg = correlationGoodbye.sendInOut(requestTxt).getContent(String.class);
         testKit.compareXMLToResource(replyMsg, "xml/xml-goodbye_response1.xml");
     }
-    
+
 }

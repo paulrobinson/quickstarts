@@ -30,7 +30,7 @@ import org.switchyard.component.soap.util.SOAPUtil;
 
 public class ServiceTransformers {
 
-    @Transformer(from="java:org.switchyard.quickstarts.soap.addressing.ItemNotAvailable", to="{urn:switchyard-quickstart:soap-addressing:1.0}ItemNotAvailable")
+    @Transformer(from = "java:org.switchyard.quickstarts.soap.addressing.ItemNotAvailable", to = "{urn:switchyard-quickstart:soap-addressing:1.0}ItemNotAvailable")
     public Element transform(ItemNotAvailable exception) throws Exception {
         System.out.println("................................. " + exception);
         ItemNotAvailableBean exceptionBean = new ItemNotAvailableBean();

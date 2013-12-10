@@ -45,9 +45,8 @@ import org.switchyard.test.SwitchYardTestCaseConfig;
 import org.switchyard.test.SwitchYardTestKit;
 
 @SwitchYardTestCaseConfig(
-    config = SwitchYardTestCaseConfig.SWITCHYARD_XML, 
-    mixins = {CDIMixIn.class}
-)
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    mixins = { CDIMixIn.class })
 @RunWith(SwitchYardRunner.class)
 public class CamelFtpBindingTest {
 
@@ -90,13 +89,13 @@ public class CamelFtpBindingTest {
         createFile(payload, FILE_NAME);
         // Allow for the JMS Message to be processed.
         Thread.sleep(3000);
-        
+
         final LinkedBlockingQueue<Exchange> recievedMessages = greetingService.getMessages();
         assertThat(recievedMessages, is(notNullValue()));
         final Exchange recievedExchange = recievedMessages.iterator().next();
         assertThat(recievedExchange.getMessage().getContent(String.class), is(equalTo(payload)));
     }
-    
+
     private void createFile(final String text, final String fileName) throws Exception {
         File file = new File("target/ftp", fileName);
         FileUtils.write(file, text);

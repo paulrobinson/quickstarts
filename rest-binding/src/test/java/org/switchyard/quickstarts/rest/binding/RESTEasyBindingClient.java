@@ -28,7 +28,7 @@ public class RESTEasyBindingClient {
     private static final String BASE_URL = "http://localhost:8080/rest-binding";
 
     public static void main(String[] args) throws Exception {
-        String command =  null;
+        String command = null;
         if (args.length == 0) {
             System.out.println("Usage: RESTEasyBindingClient new|get|add|del [orderId] [itemId]");
             System.out.println("  new - create a new Order");
@@ -70,14 +70,14 @@ public class RESTEasyBindingClient {
                     System.out.println("Usage: get <orderId> <itemId> <quantity>");
                 }
                 String order = "<order>"
-                               + "    <orderId>" + args[1] + "</orderId>"
-                               + "    <orderItem>"
-                               + "        <item>"
-                               + "            <itemId>" + args[2] + "</itemId>"
-                               + "         </item>"
-                               + "         <quantity>" + args[3]+ "</quantity>"
-                               + "     </orderItem>"
-                               + "</order>";
+                    + "    <orderId>" + args[1] + "</orderId>"
+                    + "    <orderItem>"
+                    + "        <item>"
+                    + "            <itemId>" + args[2] + "</itemId>"
+                    + "         </item>"
+                    + "         <quantity>" + args[3] + "</quantity>"
+                    + "     </orderItem>"
+                    + "</order>";
                 System.out.println(http.sendString(BASE_URL + "/order/item", order, HTTPMixIn.HTTP_PUT));
             } else if (command.equals("del")) {
                 if (args.length < 2) {

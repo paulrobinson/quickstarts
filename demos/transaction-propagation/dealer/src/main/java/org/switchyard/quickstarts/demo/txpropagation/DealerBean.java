@@ -33,13 +33,13 @@ public class DealerBean implements Dealer {
     @Inject
     @Reference
     private DealLogger dealLogger;
-    
+
     @Override
     public Deal offer(Offer offer) {
         System.out.println("Dealer Service : Received an offer");
         Deal deal = new Deal();
         deal.setOffer(offer);
-        
+
         // If the offer is more than 10% off, then reject it
         if (offer.getCar().getPrice() * .9 > offer.getAmount()) {
             deal.setAccepted(false);
@@ -51,7 +51,7 @@ public class DealerBean implements Dealer {
         Application creditReply = creditService.checkCredit(offer);
         offer.getApplication().setApproved(creditReply.isApproved());
         deal.setAccepted(creditReply.isApproved());
-        
+
         if (!deal.isAccepted()) {
             try {
                 UserTransaction tx = (UserTransaction) new InitialContext().lookup("java:jboss/UserTransaction");

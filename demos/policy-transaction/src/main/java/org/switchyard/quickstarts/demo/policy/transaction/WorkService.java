@@ -20,7 +20,7 @@ package org.switchyard.quickstarts.demo.policy.transaction;
  * WorkService.
  */
 public interface WorkService {
-    
+
     /**
      * Does some work based on the command passed in.
      * @param command command

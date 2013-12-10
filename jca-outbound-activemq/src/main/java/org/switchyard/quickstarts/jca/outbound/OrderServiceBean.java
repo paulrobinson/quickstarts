@@ -33,13 +33,15 @@ import org.switchyard.component.bean.Service;
 @Service(OrderService.class)
 public class OrderServiceBean implements OrderService {
 
-    @Inject @Reference("ShippingReference")
+    @Inject
+    @Reference("ShippingReference")
     private OrderService _shipping;
-    @Inject @Reference("FillingStockReference")
+    @Inject
+    @Reference("FillingStockReference")
     private OrderService _fillingStock;
-    
+
     private List<String> _stock = Arrays.asList("BREAD", "BUTTER", "JAM", "EGG", "MILK");
-    
+
     @Override
     public void process(String order) {
         if (_stock.contains(order)) {

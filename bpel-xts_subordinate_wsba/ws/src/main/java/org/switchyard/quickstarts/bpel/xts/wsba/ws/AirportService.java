@@ -56,12 +56,12 @@ public class AirportService {
     @WebMethod
     @WebResult(name = "fltid")
     public String getFLTID(@WebParam(name = "from") String from,
-            @WebParam(name = "to") String to, @WebParam(name = "date") Date date) {
+        @WebParam(name = "to") String to, @WebParam(name = "date") Date date) {
         Calendar c = Calendar.getInstance();
         c.setTime(date);
         return from + "/" + to + "/"
-                + String.valueOf(c.get(Calendar.MONTH) + 1) + "/"
-                + String.valueOf(c.get(Calendar.DAY_OF_MONTH));
+            + String.valueOf(c.get(Calendar.MONTH) + 1) + "/"
+            + String.valueOf(c.get(Calendar.DAY_OF_MONTH));
     }
 
     /**
@@ -71,7 +71,7 @@ public class AirportService {
      */
     @WebMethod
     public void order(@WebParam(name = "name") String name,
-            @WebParam(name = "fltid") String fltid) {
+        @WebParam(name = "fltid") String fltid) {
         log.info("AirportService:order");
 
         UserBusinessActivity uba = UserBusinessActivity.getUserBusinessActivity();
@@ -85,7 +85,7 @@ public class AirportService {
 
             // Create order participant (fly ticket)
             OrderParticipant op = new OrderParticipant(
-                    uba.toString(), name, fltid);
+                uba.toString(), name, fltid);
 
             try {
                 // Enlist order participant to the transaction
@@ -96,7 +96,7 @@ public class AirportService {
                 e.printStackTrace();
             }
         }
-        
+
     }
 
 }

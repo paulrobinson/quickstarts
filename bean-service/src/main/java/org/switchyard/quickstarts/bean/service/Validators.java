@@ -45,7 +45,8 @@ public class Validators {
      */
     @Validator
     public ValidationResult validate(OrderAck orderAck) {
-        System.out.println("|--- Validating OrderAck object:[OrderID=" + orderAck.getOrderId() + ", accepted=" + orderAck.isAccepted() + ", status=" + orderAck.getStatus() + "] ---|");
+        System.out.println("|--- Validating OrderAck object:[OrderID=" + orderAck.getOrderId() + ", accepted=" + orderAck.isAccepted() + ", status=" + orderAck.getStatus()
+            + "] ---|");
         return BaseValidator.validResult();
     }
 

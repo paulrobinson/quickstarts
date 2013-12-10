@@ -26,8 +26,8 @@ public class JavaDSLBuilder extends RouteBuilder {
             .log("${body}")
             .split(body(String.class).tokenize("\n"))
             .filter()
-                .groovy("request.getBody().startsWith('sally:')")
-                    .transform().javaScript("request.getBody().substring(6, request.getBody().length())")
-                    .to("switchyard://XMLService?operationName=acceptMessage");
+            .groovy("request.getBody().startsWith('sally:')")
+            .transform().javaScript("request.getBody().substring(6, request.getBody().length())")
+            .to("switchyard://XMLService?operationName=acceptMessage");
     }
 }

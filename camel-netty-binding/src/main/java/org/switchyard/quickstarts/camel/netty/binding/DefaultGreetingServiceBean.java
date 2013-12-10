@@ -23,7 +23,7 @@ import org.switchyard.component.bean.Service;
  *
  * @author Lukasz Dywicki
  */
-@Service(name = "DefaultGreetingService", componentName="DefaultGreetingService", value=GreetingService.class)
+@Service(name = "DefaultGreetingService", componentName = "DefaultGreetingService", value = GreetingService.class)
 public class DefaultGreetingServiceBean extends GreetingServiceBean {
 
     /**

@@ -39,7 +39,7 @@ public class Greet {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long _id;
 
-    @Column(name  = "sender")
+    @Column(name = "sender")
     private String _sender;
 
     @Column(name = "receiver")

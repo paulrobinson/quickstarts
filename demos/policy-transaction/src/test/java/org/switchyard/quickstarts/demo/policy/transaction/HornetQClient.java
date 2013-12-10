@@ -29,12 +29,12 @@ import org.switchyard.component.test.mixins.hornetq.HornetQMixIn;
  *
  */
 public final class HornetQClient {
-    
+
     /**
      * The queue to send to.
      */
     private static final String DEFAULT_QUEUE_NAME = "policyQSTransacted";
-    
+
     /**
      * The user name to connect to JMS server.
      */
@@ -44,18 +44,18 @@ public final class HornetQClient {
      * The password to connect to JMS server.
      */
     private static final String PASSWD = "guestp.1";
-    
+
     /**
      * The name of the file containing the message content.
      */
     private static final String DEFAULT_PAYLOAD = "rollback.A";
-    
+
     /**
      * Private no-args constructor.
      */
     private HornetQClient() {
     }
-    
+
     /**
      * Only execution point for this application.
      * @param args parameters
@@ -63,14 +63,14 @@ public final class HornetQClient {
      */
     public static void main(final String[] args) throws Exception {
         HornetQMixIn hqMixIn = new HornetQMixIn(false)
-                                    .setUser(USER)
-                                    .setPassword(PASSWD);
+            .setUser(USER)
+            .setPassword(PASSWD);
         hqMixIn.initialize();
-        
+
         // Parse arguments - expecting : [payload] [queueName]
         String queueName = DEFAULT_QUEUE_NAME;
         String payload = DEFAULT_PAYLOAD;
-        
+
         if (args.length > 0) {
             payload = args[0];
         }
@@ -79,7 +79,7 @@ public final class HornetQClient {
         }
         System.out.println("Using queue name: " + queueName);
         System.out.println("Using payload: " + payload);
-        
+
         try {
             Session session = hqMixIn.getJMSSession();
             final MessageProducer producer = session.createProducer(HornetQMixIn.getJMSQueue(queueName));

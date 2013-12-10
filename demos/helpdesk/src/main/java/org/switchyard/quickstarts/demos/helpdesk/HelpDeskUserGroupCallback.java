@@ -30,11 +30,11 @@ import org.switchyard.component.bpm.runtime.BPMUserGroupCallback;
  */
 public final class HelpDeskUserGroupCallback extends BPMUserGroupCallback {
 
-    public static final Map<String,List<String>> USERS_GROUPS;
+    public static final Map<String, List<String>> USERS_GROUPS;
     static {
-        Map<String,List<String>> ugm = new LinkedHashMap<String,List<String>>();
-        ugm.put("krisv", Arrays.asList(new String[] {"developers"}));
-        ugm.put("david", Arrays.asList(new String[] {"users"}));
+        Map<String, List<String>> ugm = new LinkedHashMap<String, List<String>>();
+        ugm.put("krisv", Arrays.asList(new String[] { "developers" }));
+        ugm.put("david", Arrays.asList(new String[] { "users" }));
         USERS_GROUPS = Collections.unmodifiableMap(ugm);
     }
 

@@ -23,15 +23,14 @@ import org.switchyard.test.SwitchYardTestCaseConfig;
 import org.switchyard.component.test.mixins.cdi.CDIMixIn;
 import org.switchyard.component.test.mixins.http.HTTPMixIn;
 
-
 @RunWith(SwitchYardRunner.class)
 @SwitchYardTestCaseConfig(
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-        mixins = {CDIMixIn.class, HTTPMixIn.class})
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    mixins = { CDIMixIn.class, HTTPMixIn.class })
 public class WebServiceTest {
 
     private HTTPMixIn httpMixIn;
-    
+
     @Test
     public void invokeOrderWebService() throws Exception {
         // Use the HttpMixIn to invoke the SOAP binding endpoint with a SOAP input (from the test classpath)
