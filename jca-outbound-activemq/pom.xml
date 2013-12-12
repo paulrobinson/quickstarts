@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-jca-outbound-activemq</artifactId>
-    <name>Quickstart : JCA Outbound Binding for ActiveMQ</name>
+    <name>SwitchYard Quickstart: jca-outbound-activemq</name>
     <properties>
         <skipTests>true</skipTests>
         <deploy.skip>true</deploy.skip>

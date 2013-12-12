@@ -23,7 +23,7 @@
         <version>2.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>switchyard-rules-interview-dtable</artifactId>
-    <name>Quickstart : Rules Interview (Decision Table)</name>
+    <name>SwitchYard Quickstart: rules-interview-dtable</name>
     <properties>
         <deploy.skip>true</deploy.skip>
         <maven.compiler.target>1.6</maven.compiler.target>

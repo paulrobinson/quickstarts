@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-ear-deployment-order-consumer</artifactId>
-    <name>Quickstart : EAR Deployment - Order Consumer</name>
+    <name>SwitchYard Quickstart: ear-deployment - order-consumer</name>
     <dependencies>
         <dependency>
             <groupId>org.switchyard</groupId>

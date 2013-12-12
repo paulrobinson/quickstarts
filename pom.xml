@@ -26,7 +26,7 @@
     <groupId>org.switchyard.quickstarts</groupId>
     <artifactId>switchyard-quickstart-parent</artifactId>
     <packaging>pom</packaging>
-    <name>SwitchYard: Quickstarts</name>
+    <name>SwitchYard Quickstart: quickstarts</name>
     <description>Quickstarts repository for SwitchYard</description>
     <url>http://switchyard.org</url>
     <organization>

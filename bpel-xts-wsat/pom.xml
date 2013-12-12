@@ -23,7 +23,7 @@
         <version>2.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>switchyard-bpel-xts-wsat</artifactId>
-    <name>Quickstart : BPEL Service : XTS WSAT</name>
+    <name>SwitchYard Quickstart: bpel-xts-wsat</name>
     <packaging>pom</packaging>
     <modules>
         <module>bpel</module>

@@ -23,7 +23,7 @@
         <version>2.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>switchyard-bpel-jms-binding</artifactId>
-    <name>Quickstart : BPEL Service : JMS Binding</name>
+    <name>SwitchYard Quickstart: bpel-jms-binding</name>
     <packaging>jar</packaging>
     <properties>
         <deploy.skip>true</deploy.skip>

@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-camel-quartz-binding</artifactId>
-    <name>Quickstart : Camel Quartz Binding</name>
+    <name>SwitchYard Quickstart: camel-quartz-binding</name>
     <properties>
         <switchyard.version>2.0.0-SNAPSHOT</switchyard.version>
         <deploy.skip>true</deploy.skip>

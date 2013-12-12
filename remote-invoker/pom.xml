@@ -25,7 +25,7 @@
     </parent>
     <artifactId>switchyard-remote-invoker</artifactId>
     <packaging>jar</packaging>
-    <name>Quickstart : Remote Invoker</name>
+    <name>SwitchYard Quickstart: remote-invoker</name>
     <properties>
         <deploy.skip>true</deploy.skip>
         <maven.compiler.target>1.6</maven.compiler.target>

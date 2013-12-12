@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-bpel-xts-subordinate-wsba-bpel</artifactId>
-    <name>Quickstart : BPEL Service : XTS Subordinate WSBA : Business Travel Process</name>
+    <name>SwitchYard Quickstart: bpel-xts-subordinate-wsba - bpel</name>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>

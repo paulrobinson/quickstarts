@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-camel-jpa-binding</artifactId>
-    <name>Quickstart : Camel JPA Binding</name>
+    <name>SwitchYard Quickstart: camel-jpa-binding</name>
     <properties>
         <deploy.skip>true</deploy.skip>
         <maven.compiler.target>1.6</maven.compiler.target>

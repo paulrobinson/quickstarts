@@ -23,7 +23,7 @@
         <version>2.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>switchyard-rules-interview-container</artifactId>
-    <name>Quickstart : Rules Interview (Container)</name>
+    <name>SwitchYard Quickstart: rules-interview-container</name>
     <properties>
         <deploy.skip>true</deploy.skip>
         <maven.compiler.target>1.6</maven.compiler.target>

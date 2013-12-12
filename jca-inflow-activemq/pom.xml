@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-jca-inflow-activemq</artifactId>
-    <name>Quickstart : JCA Inflow Binding for ActiveMQ</name>
+    <name>SwitchYard Quickstart: jca-inflow-activemq</name>
     <properties>
         <skipTests>true</skipTests>
         <deploy.skip>true</deploy.skip>

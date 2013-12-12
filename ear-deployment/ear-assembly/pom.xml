@@ -25,7 +25,7 @@
     </parent>
     <artifactId>switchyard-ear-deployment-ear-assembly</artifactId>
     <packaging>ear</packaging>
-    <name>Quickstart : EAR Deployment - Application Assembly</name>
+    <name>SwitchYard Quickstart: ear-deployment - ear-assembly</name>
     <dependencies>
         <dependency>
             <groupId>org.switchyard.quickstarts</groupId>

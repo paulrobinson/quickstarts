@@ -25,7 +25,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>switchyard-assembly</artifactId>
     <packaging>jar</packaging>
-    <name>SwitchYard : Quickstarts Distribution Assembly</name>
+    <name>SwitchYard Quickstart: assembly</name>
     <description>SwitchYard Quickstarts Distribution Assembly</description>
     <build>
         <finalName>${project.artifactId}</finalName>

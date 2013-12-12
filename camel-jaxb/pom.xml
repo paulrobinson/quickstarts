@@ -24,7 +24,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-camel-jaxb</artifactId>
-    <name>Quickstart : Camel JAXB</name>
+    <name>SwitchYard Quickstart: camel-jaxb</name>
     <properties>
         <switchyard.version>2.0.0-SNAPSHOT</switchyard.version>
         <deploy.skip>true</deploy.skip>
