@@ -26,7 +26,6 @@
     <artifactId>switchyard-camel-jaxb</artifactId>
     <name>SwitchYard Quickstart: camel-jaxb</name>
     <properties>
-        <switchyard.version>2.0.0-SNAPSHOT</switchyard.version>
         <deploy.skip>true</deploy.skip>
         <maven.compiler.target>1.6</maven.compiler.target>
         <maven.compiler.source>1.6</maven.compiler.source>
