@@ -30,7 +30,8 @@ public class PrintServiceImpl implements PrintService {
     /**
      * Reference which allows sending reply.
      */
-    @Inject @Reference("OutgoingPrintService")
+    @Inject
+    @Reference("OutgoingPrintService")
     private PrintService _outgoing;
 
     @Override

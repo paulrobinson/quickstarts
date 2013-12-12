@@ -38,14 +38,14 @@ public class OrderServiceTest {
             .setOrderId("ORDER01")
             .setItemId("BUTTER")
             .setQuantity(100);
-        
+
         OrderAck testAck = submitOrder
             .sendInOut(testOrder)
             .getContent(OrderAck.class);
-        
+
         // verify provider did the right thing
         Assert.assertTrue(testAck.isAccepted());
-        
+
         // verify interceptor was called
         Assert.assertEquals("Order Accepted [intercepted]", testAck.getStatus());
     }

@@ -27,23 +27,23 @@ import org.switchyard.test.SwitchYardTestKit;
 
 @RunWith(SwitchYardRunner.class)
 @SwitchYardTestCaseConfig(
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-        mixins = CDIMixIn.class)
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    mixins = CDIMixIn.class)
 public class LoanApprovalTest {
-    
+
     @ServiceOperation("loanService")
     private Invoker loanService;
-    
+
     private SwitchYardTestKit testKit;
-    
+
     @Test
     public void testLoanApproval1() throws Exception {
         String requestTxt = testKit.readResourceString("xml/xml-loanreq1.xml");
         String replyMsg = loanService.sendInOut(requestTxt).getContent(String.class);
         testKit.compareXMLToResource(replyMsg, "xml/xml-loanresp1.xml");
     }
-    
-    @Test(expected=org.switchyard.test.InvocationFaultException.class)
+
+    @Test(expected = org.switchyard.test.InvocationFaultException.class)
     public void testLoanApproval2() throws Exception {
         String requestTxt = testKit.readResourceString("xml/xml-loanreq2.xml");
         loanService.sendInOut(requestTxt).getContent(String.class);

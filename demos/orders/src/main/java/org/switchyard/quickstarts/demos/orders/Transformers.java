@@ -89,11 +89,11 @@ public class Transformers {
         DOMResult dom = new DOMResult();
         try {
             TransformerFactory.newInstance().newTransformer().transform(
-                    new StreamSource(new StringReader(xml)), dom);
+                new StreamSource(new StringReader(xml)), dom);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
 
-        return ((Document)dom.getNode()).getDocumentElement();
+        return ((Document) dom.getNode()).getDocumentElement();
     }
 }

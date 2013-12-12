@@ -30,18 +30,18 @@ import org.switchyard.test.SwitchYardTestCaseConfig;
 import org.switchyard.component.test.mixins.cdi.CDIMixIn;
 
 @RunWith(SwitchYardRunner.class)
-@SwitchYardTestCaseConfig(mixins=CDIMixIn.class)
+@SwitchYardTestCaseConfig(mixins = CDIMixIn.class)
 public class ShippingTest {
-    
+
     @ServiceOperation("Shipping.ship")
     private Invoker service;
-    
+
     @Test
     public void testShip() {
         Order order = new Order();
-        order.setOrderId("SHIPIT"); 
+        order.setOrderId("SHIPIT");
         OrderAck ack = service.sendInOut(order).getContent(OrderAck.class);
-        
+
         Assert.assertTrue(ack.isAccepted());
         Assert.assertEquals(ShippingBean.SHIPPED_STATUS, ack.getStatus());
     }

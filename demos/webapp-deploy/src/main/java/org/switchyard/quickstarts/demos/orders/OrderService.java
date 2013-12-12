@@ -17,7 +17,7 @@
 package org.switchyard.quickstarts.demos.orders;
 
 public interface OrderService {
-    
+
     OrderAck submitOrder(Order order);
-    
+
 }

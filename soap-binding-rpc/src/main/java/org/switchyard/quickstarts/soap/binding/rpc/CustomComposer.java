@@ -41,7 +41,7 @@ public class CustomComposer extends SOAPMessageComposer {
         Element messageElement = exchange.getMessage().getContent(Element.class);
         String response = getElementValue(messageElement, "return");
         if (response.contains("500")) {
-            exchange.getContext().setProperty(SOAPContextMapper.HTTP_RESPONSE_STATUS, 500).addLabels(new String[]{EndpointLabel.HTTP.label()});
+            exchange.getContext().setProperty(SOAPContextMapper.HTTP_RESPONSE_STATUS, 500).addLabels(new String[] { EndpointLabel.HTTP.label() });
         }
         target = super.decompose(exchange, target);
         return target;

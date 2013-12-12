@@ -30,10 +30,9 @@ import org.switchyard.transform.config.model.TransformSwitchYardScanner;
 
 @RunWith(SwitchYardRunner.class)
 @SwitchYardTestCaseConfig(
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-        mixins = CDIMixIn.class,
-        scanners = TransformSwitchYardScanner.class
-)
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    mixins = CDIMixIn.class,
+    scanners = TransformSwitchYardScanner.class)
 public class AuditingTest {
 
     @ServiceOperation("OrderService.submitOrder")

@@ -34,7 +34,7 @@ public class OrderParticipant implements BusinessAgreementWithCoordinatorComplet
     private static final long serialVersionUID = -6459800278322126331L;
 
     private static Logger log = Logger.getLogger(OrderParticipant.class
-            .getName());
+        .getName());
 
     private String _txID;
     private String _name;
@@ -71,31 +71,31 @@ public class OrderParticipant implements BusinessAgreementWithCoordinatorComplet
 
     @Override
     public void cancel() throws FaultedException, WrongStateException,
-            SystemException {
+        SystemException {
         log.info("\n================================================================================\n"
-                + "AirportOrderParticipant "
-                + _fltid
-                + " cancel"
-                + "\n================================================================================");
+            + "AirportOrderParticipant "
+            + _fltid
+            + " cancel"
+            + "\n================================================================================");
     }
 
     @Override
     public void close() throws WrongStateException, SystemException {
         log.info("\n================================================================================\n"
-                + "AirportOrderParticipant "
-                + _fltid
-                + " close"
-                + "\n================================================================================");
+            + "AirportOrderParticipant "
+            + _fltid
+            + " close"
+            + "\n================================================================================");
     }
 
     @Override
     public void compensate() throws FaultedException, WrongStateException,
-            SystemException {
+        SystemException {
         log.info("\n================================================================================\n"
-                + "AirportOrderParticipant "
-                + _fltid
-                + " compensate"
-                + "\n================================================================================");
+            + "AirportOrderParticipant "
+            + _fltid
+            + " compensate"
+            + "\n================================================================================");
     }
 
     @Override
@@ -107,10 +107,10 @@ public class OrderParticipant implements BusinessAgreementWithCoordinatorComplet
     @Override
     public void complete() throws WrongStateException, SystemException {
         log.info("\n================================================================================\n"
-                + "AirportOrderParticipant "
-                + _fltid
-                + " complete"
-                + "\n================================================================================");
+            + "AirportOrderParticipant "
+            + _fltid
+            + " complete"
+            + "\n================================================================================");
     }
 
 }

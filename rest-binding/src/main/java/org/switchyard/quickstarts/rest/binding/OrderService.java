@@ -24,11 +24,18 @@ package org.switchyard.quickstarts.rest.binding;
 public interface OrderService {
 
     public Order newOrder();
+
     public Order getOrder(Integer orderId) throws Exception;
+
     public String addItems(Order order) throws Exception;
+
     public String removeItem(String orderItemId) throws Exception;
+
     public String createInventory() throws Exception;
+
     public String updateInventory() throws Exception;
+
     public String removeInventory() throws Exception;
+
     public Boolean isInventorySetup();
 }

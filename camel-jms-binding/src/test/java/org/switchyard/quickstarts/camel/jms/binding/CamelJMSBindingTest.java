@@ -55,32 +55,31 @@ import org.switchyard.component.test.mixins.hornetq.HornetQMixIn;
  */
 
 @SwitchYardTestCaseConfig(
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML, 
-        mixins = {CDIMixIn.class, HornetQMixIn.class}
-)
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    mixins = { CDIMixIn.class, HornetQMixIn.class })
 @RunWith(SwitchYardRunner.class)
 public class CamelJMSBindingTest {
-    
+
     private static final String QUEUE_NAME = "GreetingServiceQueue";
     private SwitchYardTestKit _testKit;
-    
+
     @Test
     public void sendTextMessageToJMSQueue() throws Exception {
         final String payload = "dummy payload";
         // replace existing implementation for testing purposes
         _testKit.removeService("GreetingService");
         final MockHandler greetingService = _testKit.registerInOnlyService("GreetingService");
-        
+
         sendTextToQueue(payload, QUEUE_NAME);
         // Allow for the JMS Message to be processed.
         Thread.sleep(3000);
-        
+
         final LinkedBlockingQueue<Exchange> recievedMessages = greetingService.getMessages();
         assertThat(recievedMessages, is(notNullValue()));
         final Exchange recievedExchange = recievedMessages.iterator().next();
         assertThat(recievedExchange.getMessage().getContent(String.class), is(equalTo(payload)));
     }
-    
+
     private void sendTextToQueue(final String text, final String queueName) throws Exception {
         InitialContext initialContext = null;
         Connection connection = null;
@@ -97,16 +96,16 @@ public class CamelJMSBindingTest {
             producer.send(session.createTextMessage(text));
         } finally {
             if (producer != null) {
-	            producer.close();
+                producer.close();
             }
             if (session != null) {
-	            session.close();
+                session.close();
             }
             if (connection != null) {
-	            connection.close();
+                connection.close();
             }
             if (initialContext != null) {
-	            initialContext.close();
+                initialContext.close();
             }
         }
     }

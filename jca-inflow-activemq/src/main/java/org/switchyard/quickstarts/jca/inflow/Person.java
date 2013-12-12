@@ -31,9 +31,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class Person {
 
-    @XmlElement(name="name", required = true)
+    @XmlElement(name = "name", required = true)
     private String _name;
-    @XmlElement(name="language", required = true)
+    @XmlElement(name = "language", required = true)
     private String _language;
 
     /**
@@ -43,6 +43,7 @@ public class Person {
     public String getName() {
         return _name;
     }
+
     /**
      * set name.
      * @param name name
@@ -50,6 +51,7 @@ public class Person {
     public void setName(String name) {
         this._name = name;
     }
+
     /**
      * get lang.
      * @return lang
@@ -57,6 +59,7 @@ public class Person {
     public String getLanguage() {
         return _language;
     }
+
     /**
      * set lang.
      * @param lang lang
@@ -64,5 +67,5 @@ public class Person {
     public void setLanguage(String lang) {
         this._language = lang;
     }
-    
+
 }

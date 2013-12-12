@@ -20,7 +20,7 @@ import org.switchyard.component.bean.Service;
 
 @Service(OrderService.class)
 public class OrderServiceBean implements OrderService {
-    
+
     @Override
     public OrderAck submitOrder(Order order) {
         // Create an order ack
@@ -28,7 +28,7 @@ public class OrderServiceBean implements OrderService {
         orderAck.setOrderId(order.getOrderId());
         orderAck.setAccepted(true);
         orderAck.setStatus("Order Accepted");
-        
+
         return orderAck;
     }
 

@@ -26,7 +26,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.PUT;
 import javax.ws.rs.core.Response;
 
-
 /**
  * REST interface for WarehouseService.
  *
@@ -37,7 +36,7 @@ public interface WarehouseResource {
 
     @GET
     @Path("{itemId}")
-    @Produces({"text/xml"})
+    @Produces({ "text/xml" })
     public Response getItem(@PathParam("itemId") Integer itemId);
 
     @PUT
@@ -46,7 +45,7 @@ public interface WarehouseResource {
 
     @POST
     @Path("/")
-    @Consumes({"text/xml"})
+    @Consumes({ "text/xml" })
     public String updateItem(Item item) throws Exception;
 
     @DELETE

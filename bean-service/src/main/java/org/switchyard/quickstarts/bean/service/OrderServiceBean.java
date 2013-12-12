@@ -23,10 +23,11 @@ import org.switchyard.component.bean.Service;
 
 @Service(OrderService.class)
 public class OrderServiceBean implements OrderService {
-    
-    @Inject @Reference
+
+    @Inject
+    @Reference
     private InventoryService _inventory;
-    
+
     @Override
     public OrderAck submitOrder(Order order) {
         // Create an order ack

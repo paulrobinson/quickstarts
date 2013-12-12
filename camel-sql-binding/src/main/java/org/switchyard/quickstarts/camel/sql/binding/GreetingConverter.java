@@ -48,7 +48,7 @@ public class GreetingConverter {
                 (Integer) greeting.get("id"),
                 (String) greeting.get("receiver"),
                 (String) greeting.get("sender")
-            );
+                );
         }
         return greetings;
     }

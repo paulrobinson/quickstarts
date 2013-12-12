@@ -19,7 +19,7 @@ package org.switchyard.quickstarts.soap.attachment;
 import javax.activation.DataHandler;
 import javax.jws.WebService;
 
-@WebService(name="ImageService", targetNamespace="urn:switchyard-quickstart:soap-attachment:1.0")
+@WebService(name = "ImageService", targetNamespace = "urn:switchyard-quickstart:soap-attachment:1.0")
 public interface ImageService {
 
     public DataHandler echoImage(DataHandler request);

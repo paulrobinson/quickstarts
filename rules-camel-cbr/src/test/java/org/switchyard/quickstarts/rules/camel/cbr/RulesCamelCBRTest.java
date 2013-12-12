@@ -33,9 +33,9 @@ import org.switchyard.test.SwitchYardTestCaseConfig;
 public class RulesCamelCBRTest {
 
     private static final String[][] TESTS = new String[][] {
-        new String[] {"FF0000-ABC-123", "Red"},
-        new String[] {"00FF00-DEF-456", "Green"},
-        new String[] {"0000FF-GHI-789", "Blue"}
+        new String[] { "FF0000-ABC-123", "Red" },
+        new String[] { "00FF00-DEF-456", "Green" },
+        new String[] { "0000FF-GHI-789", "Blue" }
     };
 
     @ServiceOperation("RoutingService.processRoute")

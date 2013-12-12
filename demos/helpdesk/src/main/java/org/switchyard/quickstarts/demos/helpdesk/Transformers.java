@@ -43,10 +43,10 @@ public class Transformers {
     public Element transformToElement(TicketAck ticketAck) {
         StringBuilder ackXml = new StringBuilder()
             .append("<helpdesk:openTicketResponse xmlns:helpdesk=\"urn:switchyard-quickstart-demo:helpdesk:1.0\">")
-            .append(    "<ticketAck>")
-            .append(        "<id>" + ticketAck.getId() + "</id>")
-            .append(        "<received>" + ticketAck.isReceived() + "</received>")
-            .append(    "</ticketAck>")
+            .append("<ticketAck>")
+            .append("<id>" + ticketAck.getId() + "</id>")
+            .append("<received>" + ticketAck.isReceived() + "</received>")
+            .append("</ticketAck>")
             .append("</helpdesk:openTicketResponse>");
         return toElement(ackXml.toString());
     }
@@ -74,7 +74,7 @@ public class Transformers {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return ((Document)dom.getNode()).getDocumentElement();
+        return ((Document) dom.getNode()).getDocumentElement();
     }
 
 }

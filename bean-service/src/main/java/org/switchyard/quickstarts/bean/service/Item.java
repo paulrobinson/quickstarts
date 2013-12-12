@@ -24,24 +24,25 @@ public class Item {
     public String getName() {
         return _name;
     }
-    
+
     public String getItemId() {
         return _itemId;
     }
+
     public int getQuantity() {
         return _quantity;
     }
-    
+
     public Item setName(String name) {
         _name = name;
         return this;
     }
-    
+
     public Item setItemId(String itemId) {
         _itemId = itemId;
         return this;
     }
-    
+
     public Item setQuantity(int quantity) {
         _quantity = quantity;
         return this;

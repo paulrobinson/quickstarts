@@ -30,26 +30,26 @@ import org.switchyard.component.test.mixins.hornetq.HornetQMixIn;
  *
  */
 public final class HornetQClient {
-    
+
     /**
      * The queue to send to.
      */
     private static final String QUEUE_NAME = "GreetingServiceQueue";
-    
+
     /**
      * The name of the file containing the message content.
      */
     private static final String MESSAGE_PAYLOAD = "test.txt";
-    
+
     private static final String USER = "guest";
     private static final String PASSWD = "guestp.1";
-    
+
     /**
      * Private no-args constructor.
      */
     private HornetQClient() {
     }
-    
+
     /**
      * Only execution point for this application.
      * @param ignored not used.
@@ -57,10 +57,10 @@ public final class HornetQClient {
      */
     public static void main(final String[] ignored) throws Exception {
         HornetQMixIn hqMixIn = new HornetQMixIn(false)
-                                    .setUser(USER)
-                                    .setPassword(PASSWD);
+            .setUser(USER)
+            .setPassword(PASSWD);
         hqMixIn.initialize();
-        
+
         Session session = null;
         try {
             session = hqMixIn.createJMSSession();

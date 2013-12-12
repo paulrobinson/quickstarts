@@ -53,9 +53,9 @@ public class JCAInflowBindingTest {
     private static final long TEMP_STORE_USAGE_LIMIT = 209715200;
 
     private static Logger _logger = Logger.getLogger(JCAInflowBindingTest.class);
-    
+
     private static BrokerService _broker;
-    
+
     public static void startActiveMQBroker() throws Exception {
         _broker = new BrokerService();
         _broker.setBrokerName("default");
@@ -68,34 +68,34 @@ public class JCAInflowBindingTest {
         systemUsage.getTempUsage().setLimit(TEMP_STORE_USAGE_LIMIT);
         _broker.start();
     }
-    
+
     @Deployment
     public static Archive<?> createTestArchive() throws Exception {
         startActiveMQBroker();
-        
+
         File artifact = new File(JAR_FILE);
         try {
             return ShrinkWrap.create(ZipImporter.class, artifact.getName())
-                             .importFrom(new ZipFile(artifact))
-                             .as(JavaArchive.class);
+                .importFrom(new ZipFile(artifact))
+                .as(JavaArchive.class);
         } catch (Exception e) {
             throw new RuntimeException(JAR_FILE + " not found. Do \"mvn package\" before the test", e);
-         }
+        }
     }
-    
+
     /**
      * Triggers the 'GreetingService' by sending a ActiveMQ Message
      */
     @Test
     public void triggerGreetingService() throws Exception {
         ActiveMQConnectionFactory connectionFactory =
-                new ActiveMQConnectionFactory(ActiveMQConnectionFactory.DEFAULT_BROKER_URL);
+            new ActiveMQConnectionFactory(ActiveMQConnectionFactory.DEFAULT_BROKER_URL);
 
         Connection connection = null;
         try {
             connection = connectionFactory.createConnection(
-                    ActiveMQConnectionFactory.DEFAULT_USER,
-                    ActiveMQConnectionFactory.DEFAULT_PASSWORD);
+                ActiveMQConnectionFactory.DEFAULT_USER,
+                ActiveMQConnectionFactory.DEFAULT_PASSWORD);
             connection.start();
 
             Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
@@ -107,7 +107,7 @@ public class JCAInflowBindingTest {
             session.close();
             _logger.info("Sent a message into " + QUEUE + " - following message should appear on server console:");
             _logger.info("Hello there dummy :-)");
-            
+
             session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
             MessageConsumer consumer = session.createConsumer(queue);
             Assert.assertNull("Request message is still in the queue: " + QUEUE, consumer.receive(3000));
@@ -116,14 +116,14 @@ public class JCAInflowBindingTest {
             if (connection != null) {
                 connection.close();
             }
-            
+
         }
     }
-    
+
     private static final String PAYLOAD = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
-            + "<person xmlns=\"urn:switchyard-quickstart:jca-inflow-activemq:0.1.0\">\n"
-            + "    <name>dummy</name>\n"
-            + "    <language>english</language>\n"
-            + "</person>\n";
-    
+        + "<person xmlns=\"urn:switchyard-quickstart:jca-inflow-activemq:0.1.0\">\n"
+        + "    <name>dummy</name>\n"
+        + "    <language>english</language>\n"
+        + "</person>\n";
+
 }

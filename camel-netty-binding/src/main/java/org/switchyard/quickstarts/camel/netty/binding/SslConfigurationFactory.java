@@ -35,7 +35,8 @@ public class SslConfigurationFactory {
      * 
      * @return Password used to access keystore.
      */
-    @Produces @Named("password")
+    @Produces
+    @Named("password")
     public String password() {
         return "changeit";
     }
@@ -45,7 +46,8 @@ public class SslConfigurationFactory {
      * 
      * @return Trust store file.
      */
-    @Produces @Named("trustStore")
+    @Produces
+    @Named("trustStore")
     public File trustStore() {
         return new File(getPath("users.jks"));
     }
@@ -55,7 +57,8 @@ public class SslConfigurationFactory {
      * 
      * @return Key store file.
      */
-    @Produces @Named("keyStore")
+    @Produces
+    @Named("keyStore")
     public File keyStore() {
         return new File(getPath("users.jks"));
     }

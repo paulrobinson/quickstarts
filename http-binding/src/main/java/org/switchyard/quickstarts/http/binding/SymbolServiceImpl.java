@@ -53,7 +53,7 @@ public class SymbolServiceImpl implements SymbolService {
         }
         if (companyName.equals("requestInfo")) {
             Property prop = context.getProperty(HttpComposition.HTTP_REQUEST_INFO);
-            return ((HttpRequestInfo)prop.getValue()).toString();
+            return ((HttpRequestInfo) prop.getValue()).toString();
         }
 
         // Note the property becomes lower cased when executed on AS7
@@ -61,7 +61,7 @@ public class SymbolServiceImpl implements SymbolService {
         if (prop == null) {
             prop = context.getProperty("Content-type");
         }
-        String contentType = (prop == null) ? null : (String)prop.getValue();
+        String contentType = (prop == null) ? null : (String) prop.getValue();
         if (contentType != null) {
             if (contentType.contains("text/plain")) {
                 if (companyName.equalsIgnoreCase("vineyard")) {

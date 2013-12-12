@@ -25,7 +25,7 @@ public class Deal {
     public long getId() {
         return id;
     }
-    
+
     public Offer getOffer() {
         return offer;
     }

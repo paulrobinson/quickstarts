@@ -24,28 +24,27 @@ import org.switchyard.test.SwitchYardTestCaseConfig;
 import org.switchyard.component.test.mixins.cdi.CDIMixIn;
 import org.switchyard.component.test.mixins.http.HTTPMixIn;
 
-
 @RunWith(SwitchYardRunner.class)
 @SwitchYardTestCaseConfig(
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-        mixins = {CDIMixIn.class, HTTPMixIn.class})
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    mixins = { CDIMixIn.class, HTTPMixIn.class })
 public class WebServiceTest {
 
     private HTTPMixIn httpMixIn;
-    
+
     @Test
     public void invokeOrderWebService() throws Exception {
         httpMixIn.
             postResourceAndTestXML("http://localhost:18001/quickstart-validate-xml/OrderService", "/xml/soap-request.xml", "/xml/soap-response.xml");
     }
-    
+
     @Test
     public void invokeOrderWebServiceValidationFail() throws Exception {
         String response = httpMixIn.
-                postResource("http://localhost:18001/quickstart-validate-xml/OrderService", "/xml/soap-request-with-invalid-element.xml");
+            postResource("http://localhost:18001/quickstart-validate-xml/OrderService", "/xml/soap-request-with-invalid-element.xml");
         Assert.assertTrue(response.contains("Invalid content was found starting with element 'invalid-element'. No child element is expected at this point."));
     }
-    
+
     /*
      * This test will succeed when you disable the validate.xml element in switchyard.xml.
      * 
@@ -54,5 +53,5 @@ public class WebServiceTest {
         httpMixIn.
             postResourceAndTestXML("http://localhost:18001/quickstart-validate-xml/OrderService", "/xml/soap-request-with-invalid-element.xml", "/xml/soap-response.xml");
     }
-    */
+     */
 }

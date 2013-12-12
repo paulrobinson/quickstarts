@@ -23,7 +23,7 @@ package org.switchyard.quickstarts.camel.quartz.binding;
  */
 public interface GreetingService {
 
-	/**
+    /**
      * Prints a greeting message.
      */
     void greet();

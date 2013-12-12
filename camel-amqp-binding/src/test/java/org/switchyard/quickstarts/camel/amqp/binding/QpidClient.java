@@ -45,7 +45,7 @@ public class QpidClient {
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
         System.out.println("Type your name:");
         String name = reader.readLine();
-		TextMessage textMessage = session.createTextMessage(name);
+        TextMessage textMessage = session.createTextMessage(name);
         MessageProducer producer = session.createProducer(session.createQueue("ping"));
         producer.send(textMessage);
         System.out.println("Send message " + name);

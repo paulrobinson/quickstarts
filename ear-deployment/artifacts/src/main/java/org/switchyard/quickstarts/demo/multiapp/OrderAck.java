@@ -17,36 +17,36 @@
 package org.switchyard.quickstarts.demo.multiapp;
 
 public class OrderAck {
-    
+
     private String _orderId;
     private boolean _accepted;
     private String _status;
-    
+
     public String getOrderId() {
         return _orderId;
     }
-    
+
     public boolean isAccepted() {
         return _accepted;
     }
-    
+
     public String getStatus() {
         return _status;
     }
-    
+
     public OrderAck setOrderId(String orderId) {
         _orderId = orderId;
         return this;
     }
-    
+
     public OrderAck setStatus(String status) {
         _status = status;
         return this;
     }
-    
+
     public OrderAck setAccepted(boolean accepted) {
         _accepted = accepted;
         return this;
     }
-    
+
 }

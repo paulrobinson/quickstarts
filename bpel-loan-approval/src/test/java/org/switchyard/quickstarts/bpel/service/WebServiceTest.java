@@ -26,9 +26,9 @@ import org.switchyard.transform.config.model.TransformSwitchYardScanner;
 
 @RunWith(SwitchYardRunner.class)
 @SwitchYardTestCaseConfig(
-        mixins = {CDIMixIn.class, HTTPMixIn.class},
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-        scanners = TransformSwitchYardScanner.class)
+    mixins = { CDIMixIn.class, HTTPMixIn.class },
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    scanners = TransformSwitchYardScanner.class)
 public class WebServiceTest {
 
     private HTTPMixIn httpMixIn;
@@ -37,18 +37,18 @@ public class WebServiceTest {
     public void loanApproval1() throws Exception {
         // Send a SOAP request and verify the SOAP reply is what we expected
         httpMixIn.postResourceAndTestXML(
-                "http://localhost:18001/loanService",
-                "/xml/soap-loanreq1.xml",
-                "/xml/soap-loanresp1.xml");
+            "http://localhost:18001/loanService",
+            "/xml/soap-loanreq1.xml",
+            "/xml/soap-loanresp1.xml");
     }
 
     @Test
     public void loanApproval2() throws Exception {
         // Send a SOAP request and verify the SOAP reply is what we expected
         httpMixIn.postResourceAndTestXML(
-                "http://localhost:18001/loanService",
-                "/xml/soap-loanreq2.xml",
-                "/xml/soap-loanresp2.xml");
+            "http://localhost:18001/loanService",
+            "/xml/soap-loanreq2.xml",
+            "/xml/soap-loanresp2.xml");
     }
 
 }

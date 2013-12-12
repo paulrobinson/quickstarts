@@ -29,10 +29,10 @@ import org.switchyard.transform.config.model.TransformSwitchYardScanner;
 
 @RunWith(SwitchYardRunner.class)
 @SwitchYardTestCaseConfig(
-        mixins = {CDIMixIn.class, HTTPMixIn.class},
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-        scanners = TransformSwitchYardScanner.class)
-        //mixins = {CDIMixIn.class, PropertyMixIn.class, HTTPMixIn.class})
+    mixins = { CDIMixIn.class, HTTPMixIn.class },
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    scanners = TransformSwitchYardScanner.class)
+//mixins = {CDIMixIn.class, PropertyMixIn.class, HTTPMixIn.class})
 public class WebServiceTest {
 
     //private PropertyMixIn propMixIn;
@@ -45,10 +45,10 @@ public class WebServiceTest {
 
     @Test
     public void webServiceShipped() throws Exception {
-    	// Send a SOAP request and verify the SOAP reply is what we expected
-    	//httpMixIn.setDumpMessages(true);
+        // Send a SOAP request and verify the SOAP reply is what we expected
+        //httpMixIn.setDumpMessages(true);
         httpMixIn.postResourceAndTestXML(
-                "http://localhost:18001/swydws/ProcessOrder", "/xml/soap-request.xml", "/xml/soap-response.xml");
-                //"http://localhost:18002/swydws/ProcessOrder", "/xml/soap-request.xml", "/xml/soap-response.xml");
+            "http://localhost:18001/swydws/ProcessOrder", "/xml/soap-request.xml", "/xml/soap-response.xml");
+        //"http://localhost:18002/swydws/ProcessOrder", "/xml/soap-request.xml", "/xml/soap-response.xml");
     }
 }

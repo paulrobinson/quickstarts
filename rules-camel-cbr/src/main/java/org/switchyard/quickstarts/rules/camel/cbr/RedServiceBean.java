@@ -26,7 +26,7 @@ import org.switchyard.component.bean.Service;
 public class RedServiceBean implements RedService {
 
     private static final Logger LOGGER = Logger.getLogger(RedServiceBean.class);
-    
+
     @Override
     public void handleRed(Box box) {
         LOGGER.info("Red service processing boxed widget with id: " + box.getWidget().getId());

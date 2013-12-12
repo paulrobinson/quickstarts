@@ -35,17 +35,17 @@ public interface OrderResource {
 
     @POST
     @Path("/")
-    @Produces({"text/xml"})
+    @Produces({ "text/xml" })
     public Order newOrder();
 
     @GET
     @Path("{orderId}")
-    @Produces({"text/xml"})
+    @Produces({ "text/xml" })
     public Order getOrder(@PathParam("orderId") Integer orderId);
 
     @PUT
     @Path("/item")
-    @Consumes({"text/xml"})
+    @Consumes({ "text/xml" })
     public String addItems(Order order);
 
     @DELETE

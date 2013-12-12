@@ -57,12 +57,12 @@ public class AirportService {
     @WebMethod
     @WebResult(name = "fltid")
     public String getFLTID(@WebParam(name = "from") String from,
-            @WebParam(name = "to") String to, @WebParam(name = "date") Date date) {
+        @WebParam(name = "to") String to, @WebParam(name = "date") Date date) {
         Calendar c = Calendar.getInstance();
         c.setTime(date);
         return from + "/" + to + "/"
-                + String.valueOf(c.get(Calendar.MONTH) + 1) + "/"
-                + String.valueOf(c.get(Calendar.DAY_OF_MONTH));
+            + String.valueOf(c.get(Calendar.MONTH) + 1) + "/"
+            + String.valueOf(c.get(Calendar.DAY_OF_MONTH));
     }
 
     /**
@@ -72,11 +72,11 @@ public class AirportService {
      */
     @WebMethod
     public void order(@WebParam(name = "name") String name,
-            @WebParam(name = "fltid") String fltid) {
+        @WebParam(name = "fltid") String fltid) {
         log.info("AirportService:order");
 
         UserTransaction transactionId = UserTransactionFactory
-                .userTransaction();
+            .userTransaction();
 
         if (transactionId != null) {
             log.info("Transaction ID = " + transactionId.toString());
@@ -87,15 +87,15 @@ public class AirportService {
 
             // Create order participant (fly ticket)
             OrderParticipant op = new OrderParticipant(
-                    transactionId.toString(), name, fltid);
+                transactionId.toString(), name, fltid);
 
             try {
                 // Enlist order participant to the transaction
                 TransactionManagerFactory.transactionManager()
-                        .enlistForDurableTwoPhase(
-                                op,
-                                "org.switchyard.quickstarts.bpel.xts.wsat.ws:AirportService:" + name
-                                        + ":" + fltid);
+                    .enlistForDurableTwoPhase(
+                        op,
+                        "org.switchyard.quickstarts.bpel.xts.wsat.ws:AirportService:" + name
+                            + ":" + fltid);
             } catch (Exception e) {
                 log.log(Level.SEVERE, e.getMessage());
                 e.printStackTrace();

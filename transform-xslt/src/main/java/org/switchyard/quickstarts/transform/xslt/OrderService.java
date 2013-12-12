@@ -19,9 +19,9 @@ package org.switchyard.quickstarts.transform.xslt;
 import org.switchyard.annotations.OperationTypes;
 
 public interface OrderService {
-    
-    @OperationTypes(in="{urn:switchyard-quickstart:transform-xslt:1.0}order",
-            out="{urn:switchyard-quickstart:transform-xslt:1.0}order")
+
+    @OperationTypes(in = "{urn:switchyard-quickstart:transform-xslt:1.0}order",
+        out = "{urn:switchyard-quickstart:transform-xslt:1.0}order")
     String submitOrder(String order);
-    
+
 }

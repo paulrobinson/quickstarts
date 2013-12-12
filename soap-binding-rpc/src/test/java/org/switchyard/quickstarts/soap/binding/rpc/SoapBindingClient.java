@@ -30,7 +30,7 @@ public class SoapBindingClient {
 
     private static final String SWITCHYARD_WEB_SERVICE = "http://localhost:8080/soap-binding-rpc/HelloWorldWSService";
     private static String SOAP_TEMPLATE =
-              "<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns2=\"urn:switchyard-quickstart:soap-binding-rpc:1.0\">"
+        "<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns2=\"urn:switchyard-quickstart:soap-binding-rpc:1.0\">"
             + "    <soap:Body>"
             + "        <ns2:sayHello>"
             + "            <toWhom>%s</toWhom>"
@@ -40,7 +40,7 @@ public class SoapBindingClient {
             + "</soap:Envelope>";
 
     public static void main(String[] args) throws Exception {
-        String command =  null;
+        String command = null;
         if (args.length == 0) {
             System.out.println("Usage: SoapBindingClient <some_name>");
             return;

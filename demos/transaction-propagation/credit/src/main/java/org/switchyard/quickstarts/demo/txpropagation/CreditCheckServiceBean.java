@@ -24,12 +24,14 @@ import org.switchyard.component.bean.Service;
 @Service(CreditCheckService.class)
 public class CreditCheckServiceBean implements CreditCheckService {
 
-    @Inject @Reference
+    @Inject
+    @Reference
     private RuleService checkRule;
 
-    @Inject @Reference
+    @Inject
+    @Reference
     private ApplicationLogger applicationLogger;
-    
+
     @Override
     public Application checkCredit(Offer offer) {
         Application app = checkRule.checkCredit(offer);

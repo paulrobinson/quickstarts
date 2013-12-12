@@ -19,8 +19,8 @@ package org.switchyard.quickstarts.validate.xml;
 import org.switchyard.annotations.OperationTypes;
 
 public interface OrderService {
-    
-    @OperationTypes(in="{urn:switchyard-quickstart:validate-xml:0.1.0}order",
-            out="{urn:switchyard-quickstart:validate-xml:0.1.0}order")
+
+    @OperationTypes(in = "{urn:switchyard-quickstart:validate-xml:0.1.0}order",
+        out = "{urn:switchyard-quickstart:validate-xml:0.1.0}order")
     String submitOrder(String order);
 }

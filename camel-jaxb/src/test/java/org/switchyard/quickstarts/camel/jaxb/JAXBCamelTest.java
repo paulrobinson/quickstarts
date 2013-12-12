@@ -28,9 +28,8 @@ import org.switchyard.test.SwitchYardTestCaseConfig;
  * Tests for Camel jaxb binding.
  */
 @SwitchYardTestCaseConfig(
-    config = SwitchYardTestCaseConfig.SWITCHYARD_XML, 
-    mixins = {HTTPMixIn.class}
-)
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    mixins = { HTTPMixIn.class })
 @RunWith(SwitchYardRunner.class)
 public class JAXBCamelTest {
 
@@ -42,7 +41,7 @@ public class JAXBCamelTest {
     public void setProperties() {
         System.setProperty("org.switchyard.component.http.standalone.port", "8081");
     }
-    
+
     @Test
     public void httpJAXBCamelEndpoint() throws Exception {
         GreetingRequest request = new GreetingRequest("Magesh");

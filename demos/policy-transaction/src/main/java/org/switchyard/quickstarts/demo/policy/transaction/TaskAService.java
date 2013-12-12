@@ -20,7 +20,7 @@ package org.switchyard.quickstarts.demo.policy.transaction;
  * Subtask A Service.
  */
 public interface TaskAService {
-    
+
     /**
      * Does some subtask based on the command passed in.
      * @param command command

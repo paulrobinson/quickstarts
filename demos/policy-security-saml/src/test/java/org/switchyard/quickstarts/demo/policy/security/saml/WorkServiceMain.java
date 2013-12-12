@@ -73,7 +73,7 @@ public final class WorkServiceMain {
 
     private static Element getAssertion() throws Exception {
         WSTrustClient client = new WSTrustClient("PicketLinkSTS", "PicketLinkSTSPort",
-                "http://localhost:8080/picketlink-sts/PicketLinkSTS", new SecurityInfo("admin", "admin"));
+            "http://localhost:8080/picketlink-sts/PicketLinkSTS", new SecurityInfo("admin", "admin"));
         //Element assertion = client.issueTokenForEndpoint("urn:switchyard-quickstart-demo:policy-security-saml:0.1.0");
         Element assertion = client.issueToken(SAMLUtil.SAML2_TOKEN_TYPE);
         /*
@@ -83,7 +83,7 @@ public final class WorkServiceMain {
         } else {
             throw new Exception("Token is invalid.");
         }
-        */
+         */
         return assertion;
     }
 

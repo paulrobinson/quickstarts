@@ -17,7 +17,7 @@
 package org.switchyard.quickstarts.bean.service;
 
 public interface OrderService {
-    
+
     OrderAck submitOrder(Order order);
-    
+
 }

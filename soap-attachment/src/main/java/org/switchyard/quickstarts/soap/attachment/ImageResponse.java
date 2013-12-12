@@ -20,24 +20,23 @@ import java.awt.Image;
 
 import javax.xml.bind.annotation.XmlType;
 
-@XmlType(name="imageResponse", namespace = "urn:switchyard-quickstart:soap-binding-rpc:1.0")
+@XmlType(name = "imageResponse", namespace = "urn:switchyard-quickstart:soap-binding-rpc:1.0")
 public class ImageResponse {
 
-   private Image data;
+    private Image data;
 
+    public ImageResponse() {
+    }
 
-   public ImageResponse() {
-   }
+    public ImageResponse(Image data) {
+        this.data = data;
+    }
 
-   public ImageResponse(Image data) {
-      this.data = data;
-   }
+    public Image getData() {
+        return data;
+    }
 
-   public Image getData() {
-      return data;
-   }
-
-   public void setData(Image data) {
-      this.data = data;
-   }
+    public void setData(Image data) {
+        this.data = data;
+    }
 }

@@ -21,12 +21,12 @@ public class Order {
     private String _orderId;
     private String _itemId;
     private int _quantity;
-    
+
     public Order setItemId(String itemId) {
         _itemId = itemId;
         return this;
     }
-    
+
     public Order setOrderId(String orderId) {
         _orderId = orderId;
         return this;
@@ -40,11 +40,11 @@ public class Order {
     public String getOrderId() {
         return _orderId;
     }
-    
+
     public String getItemId() {
         return _itemId;
     }
-    
+
     public int getQuantity() {
         return _quantity;
     }

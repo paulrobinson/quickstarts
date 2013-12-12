@@ -36,9 +36,8 @@ import org.switchyard.test.SwitchYardTestCaseConfig;
 import org.switchyard.test.SwitchYardTestKit;
 
 @SwitchYardTestCaseConfig(
-    config = SwitchYardTestCaseConfig.SWITCHYARD_XML, 
-    mixins = {CDIMixIn.class, TransactionMixIn.class}
-)
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    mixins = { CDIMixIn.class, TransactionMixIn.class })
 @RunWith(SwitchYardRunner.class)
 public class CamelJpaBindingStoreTest extends CamelJpaBindingTest {
 

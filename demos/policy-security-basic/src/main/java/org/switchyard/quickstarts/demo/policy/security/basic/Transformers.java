@@ -43,10 +43,10 @@ public class Transformers {
     public Element transformToElement(WorkAck workAck) {
         StringBuilder ackXml = new StringBuilder()
             .append("<policy-security-basic:doWorkResponse xmlns:policy-security-basic=\"urn:switchyard-quickstart-demo:policy-security-basic:0.1.0\">")
-            .append(    "<workAck>")
-            .append(        "<command>" + workAck.getCommand() + "</command>")
-            .append(        "<received>" + workAck.isReceived() + "</received>")
-            .append(    "</workAck>")
+            .append("<workAck>")
+            .append("<command>" + workAck.getCommand() + "</command>")
+            .append("<received>" + workAck.isReceived() + "</received>")
+            .append("</workAck>")
             .append("</policy-security-basic:doWorkResponse>");
         return toElement(ackXml.toString());
     }
@@ -74,7 +74,7 @@ public class Transformers {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return ((Document)dom.getNode()).getDocumentElement();
+        return ((Document) dom.getNode()).getDocumentElement();
     }
 
 }

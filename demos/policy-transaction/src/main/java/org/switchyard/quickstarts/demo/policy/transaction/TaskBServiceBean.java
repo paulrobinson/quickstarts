@@ -31,23 +31,25 @@ import org.switchyard.policy.TransactionPolicy;
  *  current transaction, pass <code>TaskBServiceBean.ROLLBACK</code> as the command name.
  */
 @Service(TaskBService.class)
-@Requires(transaction = {TransactionPolicy.SUSPENDS_TRANSACTION,TransactionPolicy.MANAGED_TRANSACTION_LOCAL})
+@Requires(transaction = { TransactionPolicy.SUSPENDS_TRANSACTION, TransactionPolicy.MANAGED_TRANSACTION_LOCAL })
 public class TaskBServiceBean implements TaskBService {
-    
+
     /** rollback command for this subtask. */
     public static final String ROLLBACK = WorkServiceBean.ROLLBACK + ".B";
 
     private static final String JNDI_TRANSACTION_MANAGER = "java:jboss/TransactionManager";
-    
+
     // counts the number of times a rollback has occurred
     private int _rollbackCounter = 0;
-    
-    @Inject @Reference("StoreBService") @Requires(transaction=TransactionPolicy.SUSPENDS_TRANSACTION)
+
+    @Inject
+    @Reference("StoreBService")
+    @Requires(transaction = TransactionPolicy.SUSPENDS_TRANSACTION)
     private StoreService _storeB;
-    
+
     @Override
     public final void doTask(final String command) {
-        
+
         print("Received command =>  " + command);
         Transaction t = null;
         try {
@@ -61,7 +63,7 @@ public class TaskBServiceBean implements TaskBService {
         }
 
         _storeB.store(command);
-        
+
         if (command.contains(ROLLBACK)) {
             try {
                 if (++_rollbackCounter % 4 != 0) {
@@ -75,13 +77,13 @@ public class TaskBServiceBean implements TaskBService {
             }
         }
     }
-    
+
     private Transaction getCurrentTransaction() throws Exception {
         TransactionManager tm = (TransactionManager)
-                new InitialContext().lookup(JNDI_TRANSACTION_MANAGER);
+            new InitialContext().lookup(JNDI_TRANSACTION_MANAGER);
         return tm.getTransaction();
     }
-        
+
     private void print(String message) {
         System.out.println(":: TaskBService :: " + message);
     }

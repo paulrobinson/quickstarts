@@ -56,7 +56,7 @@ public class SoapMtomClient {
         InputStream in = fileURL.openStream();
         int len = in.read(param.value);
         while (len < fileSize) {
-            len += in.read(param.value, len, (int)(fileSize - len));
+            len += in.read(param.value, len, (int) (fileSize - len));
         }
         byte[] response = imageService.resizeImage(param);
         return ImageIO.read(new ByteArrayInputStream(response));

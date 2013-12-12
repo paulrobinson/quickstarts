@@ -37,9 +37,8 @@ import org.switchyard.transform.config.model.TransformSwitchYardScanner;
 
 @SwitchYardTestCaseConfig(
     config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-    mixins = {CDIMixIn.class},
-    scanners = TransformSwitchYardScanner.class
-)
+    mixins = { CDIMixIn.class },
+    scanners = TransformSwitchYardScanner.class)
 public class CamelSqlRetrieveTest extends CamelSqlBindingTest {
 
     private SwitchYardTestKit _testKit;

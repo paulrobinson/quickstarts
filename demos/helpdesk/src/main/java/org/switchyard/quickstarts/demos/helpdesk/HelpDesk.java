@@ -40,7 +40,7 @@ import org.switchyard.component.bpm.runtime.BPMTaskServiceRegistry;
 /**
  * @author David Ward &lt;<a href="mailto:dward@jboss.org">dward@jboss.org</a>&gt; &copy; 2012 Red Hat Inc.
  */
-@ManagedBean(name="helpDesk")
+@ManagedBean(name = "helpDesk")
 @SessionScoped
 public class HelpDesk {
 
@@ -72,8 +72,8 @@ public class HelpDesk {
         return (groups != null && groups.size() > 0) ? groups.get(0) : null;
     }
 
-    public Map<String,String> getUsersGroups() {
-        Map<String,String> usersGroups = new LinkedHashMap<String,String>();
+    public Map<String, String> getUsersGroups() {
+        Map<String, String> usersGroups = new LinkedHashMap<String, String>();
         for (Map.Entry<String, List<String>> entry : USERS_GROUPS.entrySet()) {
             String key = entry.getKey();
             usersGroups.put(key + " (" + entry.getValue().get(0) + ")", key);
@@ -90,7 +90,7 @@ public class HelpDesk {
     }
 
     public void selectUser(ValueChangeEvent vce) {
-        setUserId((String)vce.getNewValue());
+        setUserId((String) vce.getNewValue());
         fetchTasks();
     }
 
@@ -102,7 +102,7 @@ public class HelpDesk {
             for (TaskSummary task : tasks) {
                 _userTasks.add(task);
                 Map<String, Object> params = _taskService.getTaskContent(task.getId());
-                Ticket ticket = (Ticket)params.get(TICKET);
+                Ticket ticket = (Ticket) params.get(TICKET);
                 _userTickets.put(task.getProcessInstanceId(), ticket);
             }
         }

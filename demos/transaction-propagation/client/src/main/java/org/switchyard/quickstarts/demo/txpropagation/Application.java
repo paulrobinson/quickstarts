@@ -26,7 +26,7 @@ public class Application {
     public long getId() {
         return _id;
     }
-    
+
     public String getName() {
         return name;
     }

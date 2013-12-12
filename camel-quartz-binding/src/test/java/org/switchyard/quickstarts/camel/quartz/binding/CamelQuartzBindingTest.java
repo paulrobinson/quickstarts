@@ -34,15 +34,14 @@ import org.switchyard.component.test.mixins.cdi.CDIMixIn;
 
 @SwitchYardTestCaseConfig(
     config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-    mixins = {CDIMixIn.class}
-)
+    mixins = { CDIMixIn.class })
 @RunWith(SwitchYardRunner.class)
 public class CamelQuartzBindingTest {
 
     private SwitchYardTestKit _testKit;
 
     @Test
-    public void shouldExecuteService() throws Exception {    
+    public void shouldExecuteService() throws Exception {
         // replace existing implementation for testing purposes
         _testKit.removeService("GreetingService");
         final MockHandler greetingService = _testKit.registerInOnlyService("GreetingService");

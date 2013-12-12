@@ -35,24 +35,30 @@ import org.switchyard.policy.TransactionPolicy;
 @Requires(transaction = TransactionPolicy.PROPAGATES_TRANSACTION)
 public class WorkServiceBean
     implements org.switchyard.quickstarts.demo.policy.transaction.WorkService {
-    
+
     /** rollback command. */
     public static final String ROLLBACK = "rollback";
 
     private static final String JNDI_TRANSACTION_MANAGER = "java:jboss/TransactionManager";
-    
-    @Inject @Reference @Requires(transaction = TransactionPolicy.PROPAGATES_TRANSACTION)
+
+    @Inject
+    @Reference
+    @Requires(transaction = TransactionPolicy.PROPAGATES_TRANSACTION)
     private TaskAService _taskAService;
-    
-    @Inject @Reference @Requires(transaction = TransactionPolicy.SUSPENDS_TRANSACTION)
+
+    @Inject
+    @Reference
+    @Requires(transaction = TransactionPolicy.SUSPENDS_TRANSACTION)
     private TaskBService _taskBService;
-    
-    @Inject @Reference @Requires(transaction = TransactionPolicy.SUSPENDS_TRANSACTION)
+
+    @Inject
+    @Reference
+    @Requires(transaction = TransactionPolicy.SUSPENDS_TRANSACTION)
     private TaskCService _taskCService;
 
     @Override
     public final void doWork(final String command) {
-        
+
         print("Received command =>  " + command);
 
         Transaction t = null;
@@ -85,13 +91,13 @@ public class WorkServiceBean
             print("Failed to get current transaction status");
         }
     }
-    
+
     private Transaction getCurrentTransaction() throws Exception {
         TransactionManager tm = (TransactionManager)
-                new InitialContext().lookup(JNDI_TRANSACTION_MANAGER);
+            new InitialContext().lookup(JNDI_TRANSACTION_MANAGER);
         return tm.getTransaction();
     }
-        
+
     private void print(String message) {
         System.out.println(":: WorkService :: " + message);
     }

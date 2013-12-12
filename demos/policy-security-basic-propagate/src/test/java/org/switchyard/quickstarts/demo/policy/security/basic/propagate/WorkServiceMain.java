@@ -98,7 +98,7 @@ public final class WorkServiceMain {
                 scheme = "http";
                 port = 8080;
             }
-            String[] userPass = policies.contains(CLIENT_AUTHENTICATION) ? new String[]{"kermit", "the-frog-1"} : null;
+            String[] userPass = policies.contains(CLIENT_AUTHENTICATION) ? new String[] { "kermit", "the-frog-1" } : null;
             invokeWorkService(scheme, port, userPass);
         }
     }

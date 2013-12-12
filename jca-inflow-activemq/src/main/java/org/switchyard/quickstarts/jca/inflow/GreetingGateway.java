@@ -27,21 +27,21 @@ public interface GreetingGateway {
      *
      * @param person XML representation of Person object
      */
-    @OperationTypes(in="{urn:switchyard-quickstart:jca-inflow-activemq:0.1.0}person")
+    @OperationTypes(in = "{urn:switchyard-quickstart:jca-inflow-activemq:0.1.0}person")
     void english(String person);
-    
+
     /**
      * Prints a greeting message in Spanish using the passed in name.
      * @param person XML representation of Person object
      */
-    @OperationTypes(in="{urn:switchyard-quickstart:jca-inflow-activemq:0.1.0}person")
+    @OperationTypes(in = "{urn:switchyard-quickstart:jca-inflow-activemq:0.1.0}person")
     void spanish(String person);
-    
+
     /**
      * Prints a greeting message in Japanese using the passed in name.
      * @param person XML representation of Person object
      */
-    @OperationTypes(in="{urn:switchyard-quickstart:jca-inflow-activemq:0.1.0}person")
+    @OperationTypes(in = "{urn:switchyard-quickstart:jca-inflow-activemq:0.1.0}person")
     void japanese(String person);
 
 }

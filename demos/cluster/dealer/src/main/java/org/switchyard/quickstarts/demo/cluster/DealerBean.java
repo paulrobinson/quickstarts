@@ -33,7 +33,7 @@ public class DealerBean implements Dealer {
         System.out.println("Dealer Service : Received an offer");
         Deal deal = new Deal();
         deal.setOffer(offer);
-        
+
         // If the offer is more than 10% off, then reject it
         if (offer.getCar().getPrice() * .9 > offer.getAmount()) {
             deal.setAccepted(false);

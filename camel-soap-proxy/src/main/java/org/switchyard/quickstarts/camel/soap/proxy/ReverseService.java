@@ -28,19 +28,19 @@ import javax.jws.soap.SOAPBinding;
 /**
  * @author David Ward &lt;<a href="mailto:dward@jboss.org">dward@jboss.org</a>&gt; (C) 2011 Red Hat Inc.
  */
-@WebService(name="ReverseService", serviceName="ReverseService", targetNamespace="urn:switchyard-quickstart:camel-soap-proxy:1.0")
-@SOAPBinding(style=DOCUMENT, use=LITERAL)
+@WebService(name = "ReverseService", serviceName = "ReverseService", targetNamespace = "urn:switchyard-quickstart:camel-soap-proxy:1.0")
+@SOAPBinding(style = DOCUMENT, use = LITERAL)
 public class ReverseService {
 
-    @WebMethod(action="urn:switchyard-quickstart:camel-soap-proxy:1.0")
-    @WebResult(name="text")
-    public String reverse(@WebParam(name="text") String text) {
+    @WebMethod(action = "urn:switchyard-quickstart:camel-soap-proxy:1.0")
+    @WebResult(name = "text")
+    public String reverse(@WebParam(name = "text") String text) {
         return new StringBuilder(text).reverse().toString();
     }
 
-    @WebMethod(action="urn:switchyard-quickstart:camel-soap-proxy:1.0")
-    @WebResult(name="text")
-    public String upper(@WebParam(name="text") String text) {
+    @WebMethod(action = "urn:switchyard-quickstart:camel-soap-proxy:1.0")
+    @WebResult(name = "text")
+    public String upper(@WebParam(name = "text") String text) {
         return text.toUpperCase();
     }
 

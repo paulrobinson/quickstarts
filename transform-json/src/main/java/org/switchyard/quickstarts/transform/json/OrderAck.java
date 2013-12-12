@@ -17,33 +17,33 @@
 package org.switchyard.quickstarts.transform.json;
 
 public class OrderAck {
-    
+
     private String _orderId;
     private boolean _accepted;
     private String _status;
-    
+
     public String getOrderId() {
         return _orderId;
     }
-    
+
     public boolean isAccepted() {
         return _accepted;
     }
-    
+
     public String getStatus() {
         return _status;
     }
-    
+
     public OrderAck setOrderId(String orderId) {
         _orderId = orderId;
         return this;
     }
-    
+
     public OrderAck setStatus(String status) {
         _status = status;
         return this;
     }
-    
+
     public OrderAck setAccepted(boolean accepted) {
         _accepted = accepted;
         return this;
@@ -57,9 +57,9 @@ public class OrderAck {
         if (!(obj instanceof OrderAck)) {
             return false;
         }
-        
-        OrderAck orderAck = (OrderAck)obj;
-        return (orderAck.isAccepted() == isAccepted()) 
+
+        OrderAck orderAck = (OrderAck) obj;
+        return (orderAck.isAccepted() == isAccepted())
             && (orderAck.getStatus().equals(getStatus())
             && (orderAck.getOrderId().equals(getOrderId())));
     }

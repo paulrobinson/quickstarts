@@ -48,8 +48,7 @@ import org.switchyard.test.SwitchYardTestKit;
 
 @SwitchYardTestCaseConfig(
     config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-    mixins = {CDIMixIn.class}
-)
+    mixins = { CDIMixIn.class })
 @RunWith(SwitchYardRunner.class)
 public class CamelNettyBindingTest {
 

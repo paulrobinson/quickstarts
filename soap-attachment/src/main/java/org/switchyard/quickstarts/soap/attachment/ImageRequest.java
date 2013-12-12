@@ -20,17 +20,16 @@ import java.awt.Image;
 
 import javax.xml.bind.annotation.XmlType;
 
-@XmlType(name="imageRequest", namespace = "urn:switchyard-quickstart:soap-binding-rpc:1.0")
+@XmlType(name = "imageRequest", namespace = "urn:switchyard-quickstart:soap-binding-rpc:1.0")
 public class ImageRequest {
 
-   private Image data;
+    private Image data;
 
+    public Image getData() {
+        return data;
+    }
 
-   public Image getData() {
-      return data;
-   }
-
-   public void setData(Image data) {
-      this.data = data;
-   }
+    public void setData(Image data) {
+        this.data = data;
+    }
 }

@@ -35,8 +35,8 @@ import org.switchyard.component.bean.Service;
 @Service(WarehouseService.class)
 public class WarehouseServiceImpl implements WarehouseService {
 
-//    @Inject
-//    private Context context;
+    //    @Inject
+    //    private Context context;
 
     private static final Logger LOGGER = Logger.getLogger(WarehouseService.class);
     private static final String SUCCESS = "SUCCESS";
@@ -73,7 +73,7 @@ public class WarehouseServiceImpl implements WarehouseService {
             throw new RuntimeException("Item " + itemId + " not found!");
         }
         this.items.remove(itemId);
-        LOGGER.info("Removed item " +itemId);
+        LOGGER.info("Removed item " + itemId);
         return SUCCESS;
     }
 

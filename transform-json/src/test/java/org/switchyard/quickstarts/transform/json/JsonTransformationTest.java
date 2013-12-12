@@ -77,9 +77,9 @@ public class JsonTransformationTest {
         // parse the reference and returned JSON strings and compare for equality
         ObjectMapper mapper = new ObjectMapper();
         OrderAck expected = mapper.readValue(
-                _testKit.readResourceString(ORDER_ACK_JSON), OrderAck.class);
+            _testKit.readResourceString(ORDER_ACK_JSON), OrderAck.class);
         OrderAck returned = mapper.readValue(result, OrderAck.class);
-        
+
         Assert.assertEquals(expected, returned);
     }
 }

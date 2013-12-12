@@ -42,8 +42,7 @@ import org.switchyard.component.test.mixins.cdi.CDIMixIn;
  */
 @SwitchYardTestCaseConfig(
     config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-    mixins = {CDIMixIn.class}
-)
+    mixins = { CDIMixIn.class })
 @RunWith(SwitchYardRunner.class)
 public class CamelMailBindingTest {
 

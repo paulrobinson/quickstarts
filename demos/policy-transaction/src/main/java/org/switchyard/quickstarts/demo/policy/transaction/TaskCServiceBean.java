@@ -31,20 +31,21 @@ import org.switchyard.policy.TransactionPolicy;
  *  current transaction, pass <code>TaskCServiceBean.ROLLBACK</code> as the command name.
  */
 @Service(TaskCService.class)
-@Requires(transaction = {TransactionPolicy.SUSPENDS_TRANSACTION,TransactionPolicy.NO_MANAGED_TRANSACTION})
+@Requires(transaction = { TransactionPolicy.SUSPENDS_TRANSACTION, TransactionPolicy.NO_MANAGED_TRANSACTION })
 public class TaskCServiceBean implements TaskCService {
-    
+
     /** rollback command for this subtask. */
     public static final String ROLLBACK = WorkServiceBean.ROLLBACK + ".C";
 
     private static final String JNDI_TRANSACTION_MANAGER = "java:jboss/TransactionManager";
-    
-    @Inject @Reference("StoreCService")
+
+    @Inject
+    @Reference("StoreCService")
     private StoreService _storeC;
-    
+
     @Override
     public final void doTask(final String command) {
-        
+
         print("Received command =>  " + command);
         Transaction t = null;
         try {
@@ -54,24 +55,24 @@ public class TaskCServiceBean implements TaskCService {
         }
 
         _storeC.store(command);
-        
+
         if (t == null) {
             print("No active transaction");
         } else {
             print("[Error] Managed transaction exists in spite of being marked as " + TransactionPolicy.NO_MANAGED_TRANSACTION);
         }
-        
+
         if (command.contains(ROLLBACK)) {
             print(String.format("This service requires %s, so it never has transaction to rollback.", TransactionPolicy.NO_MANAGED_TRANSACTION));
         }
     }
-    
+
     private Transaction getCurrentTransaction() throws Exception {
         TransactionManager tm = (TransactionManager)
-                new InitialContext().lookup(JNDI_TRANSACTION_MANAGER);
+            new InitialContext().lookup(JNDI_TRANSACTION_MANAGER);
         return tm.getTransaction();
     }
-        
+
     private void print(String message) {
         System.out.println(":: TaskCService :: " + message);
     }

@@ -57,7 +57,7 @@ public abstract class CamelSqlBindingTest {
             + "id INT PRIMARY KEY AUTO_INCREMENT, "
             + "receiver VARCHAR(255), "
             + "sender VARCHAR(255) "
-        + ");";
+            + ");";
 
         connection.createStatement().executeUpdate("DROP TABLE IF EXISTS greetings");
         connection.createStatement().executeUpdate(createStatement);

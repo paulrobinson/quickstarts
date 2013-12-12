@@ -26,19 +26,18 @@ import org.switchyard.test.SwitchYardTestCaseConfig;
 
 @RunWith(SwitchYardRunner.class)
 @SwitchYardTestCaseConfig(
-        config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
-        mixins = CDIMixIn.class
-)
+    config = SwitchYardTestCaseConfig.SWITCHYARD_XML,
+    mixins = CDIMixIn.class)
 public class CamelServiceTest {
 
     private static final String TEST_MESSAGE = "\n"
-      + "bob: Hello there!\n"
-      + "sally: I like cheese\n"
-      + "fred: Math makes me sleepy\n"
-      + "bob: E pluribus unum\n"
-      + "sally: And milk too\n"
-      + "bob: Four score and seven years\n"
-      + "sally: Actually, any kind of dairy is OK in my book\n";
+        + "bob: Hello there!\n"
+        + "sally: I like cheese\n"
+        + "fred: Math makes me sleepy\n"
+        + "bob: E pluribus unum\n"
+        + "sally: And milk too\n"
+        + "bob: Four score and seven years\n"
+        + "sally: Actually, any kind of dairy is OK in my book\n";
 
     @ServiceOperation("JavaDSL.acceptMessage")
     private Invoker acceptMessage;

@@ -35,10 +35,12 @@ public class GreetingServiceImpl implements GreetingService {
         "Tomo", "Lukasz", "Magesh", "Tom"
     };
 
-    @Inject @Reference("StoreService")
+    @Inject
+    @Reference("StoreService")
     private SingleGreetService store;
 
-    @Inject @Reference("RemoveService")
+    @Inject
+    @Reference("RemoveService")
     private SingleGreetService remove;
 
     @Override

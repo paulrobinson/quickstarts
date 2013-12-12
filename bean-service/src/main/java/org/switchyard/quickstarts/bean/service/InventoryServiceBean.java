@@ -25,7 +25,7 @@ import org.switchyard.component.bean.Service;
 public class InventoryServiceBean implements InventoryService {
 
     private final Map<String, Item> _inventory = new HashMap<String, Item>();
-    
+
     public InventoryServiceBean() {
         Item butter = new Item()
             .setItemId("BUTTER")
@@ -40,7 +40,7 @@ public class InventoryServiceBean implements InventoryService {
         if (item == null) {
             throw new ItemNotFoundException("We don't got any " + itemId);
         }
-        
+
         return item;
     }
 }

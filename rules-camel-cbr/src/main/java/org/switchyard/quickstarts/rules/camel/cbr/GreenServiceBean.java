@@ -26,7 +26,7 @@ import org.switchyard.component.bean.Service;
 public class GreenServiceBean implements GreenService {
 
     private static final Logger LOGGER = Logger.getLogger(GreenServiceBean.class);
-    
+
     @Override
     public void handleGreen(Box box) {
         LOGGER.info("Green service processing boxed widget with id: " + box.getWidget().getId());
