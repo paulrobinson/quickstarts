@@ -109,4 +109,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : Camel Quartz Binding</description>
 </project>

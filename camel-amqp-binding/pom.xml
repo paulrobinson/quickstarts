@@ -117,4 +117,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : Camel AMQP Binding</description>
 </project>

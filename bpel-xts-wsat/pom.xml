@@ -38,4 +38,5 @@
             </plugin>
         </plugins>
     </build>
+<description>Quickstart : BPEL Service : XTS WSAT</description>
 </project>

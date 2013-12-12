@@ -188,4 +188,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : JCA Outbound Binding for ActiveMQ</description>
 </project>

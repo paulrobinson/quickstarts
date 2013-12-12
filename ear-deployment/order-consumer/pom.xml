@@ -147,4 +147,5 @@
             </plugin>
         </plugins>
     </build>
+<description>Quickstart : EAR Deployment - Order Consumer</description>
 </project>

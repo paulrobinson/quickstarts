@@ -124,4 +124,5 @@
             </plugin>
         </plugins>
     </build>
+<description>Quickstart : EAR Deployment - Order Service</description>
 </project>

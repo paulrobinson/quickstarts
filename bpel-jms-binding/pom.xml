@@ -131,4 +131,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : BPEL Service : JMS Binding</description>
 </project>

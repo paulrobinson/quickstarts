@@ -138,4 +138,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : JAXB Transformation</description>
 </project>

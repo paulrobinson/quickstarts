@@ -61,4 +61,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart Demo: Multiple Applications</description>
 </project>

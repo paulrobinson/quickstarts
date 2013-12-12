@@ -51,4 +51,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+<description>Quickstart : BPEL Service : XTS WSAT : Business Travel Process</description>
 </project>

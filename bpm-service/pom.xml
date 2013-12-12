@@ -134,4 +134,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : BPM Service</description>
 </project>

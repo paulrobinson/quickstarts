@@ -133,4 +133,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : Camel FTP Binding</description>
 </project>

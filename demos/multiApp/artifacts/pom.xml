@@ -93,4 +93,5 @@
             </plugin>
         </plugins>
     </build>
+<description>Quickstart Demo: Multiple Applications - Service Artifacts</description>
 </project>

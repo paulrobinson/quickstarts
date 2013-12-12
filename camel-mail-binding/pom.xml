@@ -126,4 +126,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : Camel Mail Binding</description>
 </project>

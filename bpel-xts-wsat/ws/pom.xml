@@ -56,4 +56,5 @@
             </plugin>
         </plugins>
     </build>
+<description>Quickstart : BPEL Service : XTS WSAT : Airport Web Service</description>
 </project>

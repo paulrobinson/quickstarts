@@ -139,4 +139,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : Bean Service</description>
 </project>

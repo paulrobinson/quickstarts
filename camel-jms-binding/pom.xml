@@ -186,4 +186,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : Camel JMS Binding</description>
 </project>

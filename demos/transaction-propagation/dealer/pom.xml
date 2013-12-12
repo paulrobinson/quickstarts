@@ -157,4 +157,5 @@
             </plugin>
         </plugins>
     </build>
+<description>Quickstart Demo: Remote Transaction Propagation - Dealer Service</description>
 </project>

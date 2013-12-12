@@ -119,4 +119,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : Camel JAXB</description>
 </project>

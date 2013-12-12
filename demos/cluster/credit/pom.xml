@@ -105,4 +105,5 @@
             </plugin>
         </plugins>
     </build>
+<description>Quickstart Demo: Cluster - Credit Service</description>
 </project>

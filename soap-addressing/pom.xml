@@ -128,4 +128,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : SOAP with WS-Addressing</description>
 </project>

@@ -60,4 +60,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : EAR Deployment</description>
 </project>

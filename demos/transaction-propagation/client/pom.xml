@@ -54,4 +54,5 @@
             </plugin>
         </plugins>
     </build>
+<description>Quickstart Demo: Remote Transaction Propagation - Client</description>
 </project>

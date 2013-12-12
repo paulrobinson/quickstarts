@@ -141,4 +141,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart Demo : Security Policy : Basic Authentication (+SSL) with Propagation</description>
 </project>

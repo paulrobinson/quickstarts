@@ -140,4 +140,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : Camel SQL Binding</description>
 </project>

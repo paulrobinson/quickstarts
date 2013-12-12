@@ -129,4 +129,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : Camel Exchange Bus CDI</description>
 </project>

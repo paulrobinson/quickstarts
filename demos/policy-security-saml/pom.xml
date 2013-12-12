@@ -172,4 +172,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart Demo : Security Policy : SAML Assertion (+SSL)</description>
 </project>

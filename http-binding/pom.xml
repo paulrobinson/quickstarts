@@ -140,4 +140,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : HTTP Binding</description>
 </project>

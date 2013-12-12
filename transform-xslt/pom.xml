@@ -139,4 +139,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : XSLT Transformation</description>
 </project>

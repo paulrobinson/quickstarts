@@ -29,4 +29,5 @@
         <module>credit</module>
         <module>dealer</module>
     </modules>
+<description>Quickstart Demo: Remote Transaction Propagation</description>
 </project>

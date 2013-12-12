@@ -204,4 +204,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart Demo : Help Desk</description>
 </project>

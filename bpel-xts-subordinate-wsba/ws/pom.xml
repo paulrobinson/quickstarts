@@ -56,4 +56,5 @@
             </plugin>
         </plugins>
     </build>
+<description>Quickstart : BPEL Service : XTS Subordinate WSBA : Airport Web Service</description>
 </project>

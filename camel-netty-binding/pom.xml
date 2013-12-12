@@ -147,4 +147,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : Camel Netty Binding</description>
 </project>

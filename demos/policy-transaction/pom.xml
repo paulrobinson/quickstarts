@@ -210,4 +210,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart Demo : Transaction Policy</description>
 </project>

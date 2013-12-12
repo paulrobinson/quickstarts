@@ -83,4 +83,5 @@
             </plugin>
         </plugins>
     </build>
+<description>Quickstart Demo : JEE Webapp Deployment</description>
 </project>

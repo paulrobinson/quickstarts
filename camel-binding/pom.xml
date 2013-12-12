@@ -81,4 +81,5 @@
             </plugin>
         </plugins>
     </build>
+<description>Quickstart : Camel Binding</description>
 </project>

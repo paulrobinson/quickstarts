@@ -141,4 +141,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart Demo : Security Policy : WSS Username (+SSL)</description>
 </project>

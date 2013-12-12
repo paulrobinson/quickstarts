@@ -146,4 +146,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart Demo : Security Policy : WSS Signature+Encryption (+SSL)</description>
 </project>

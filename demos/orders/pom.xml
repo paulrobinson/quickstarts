@@ -175,4 +175,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart Demo : Orders</description>
 </project>

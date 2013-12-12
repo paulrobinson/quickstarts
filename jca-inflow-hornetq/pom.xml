@@ -150,4 +150,5 @@
             </properties>
         </profile>
     </profiles>
+<description>Quickstart : JCA Inflow Binding for HornetQ</description>
 </project>

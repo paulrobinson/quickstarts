@@ -183,4 +183,5 @@
             </plugin>
         </plugins>
     </build>
+<description>Quickstart Demo: Multiple Applications - Order Consumer</description>
 </project>

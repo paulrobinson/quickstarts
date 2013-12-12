@@ -144,4 +144,5 @@
             </plugin>
         </plugins>
     </build>
+<description>Quickstart Demo: Multiple Applications - Order Service</description>
 </project>

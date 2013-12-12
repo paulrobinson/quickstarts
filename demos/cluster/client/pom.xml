@@ -54,4 +54,5 @@
             </plugin>
         </plugins>
     </build>
+<description>Quickstart Demo: Cluster - Client</description>
 </project>
