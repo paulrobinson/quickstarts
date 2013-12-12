@@ -19,7 +19,7 @@
         <groupId>org.switchyard.quickstarts</groupId>
         <version>2.0.0-SNAPSHOT</version>
     </parent>
-    <artifactId>switchyard-quickstart-bpel-service-simple-correlation</artifactId>
+    <artifactId>switchyard-bpel-simple-correlation</artifactId>
     <name>Quickstart : BPEL Service : Simple Correlation</name>
     <packaging>jar</packaging>
     <properties>

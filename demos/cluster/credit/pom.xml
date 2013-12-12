@@ -21,7 +21,7 @@
         <relativePath>../../../pom.xml</relativePath>
     </parent>
     <groupId>org.switchyard.quickstarts.demos</groupId>
-    <artifactId>switchyard-quickstart-demo-cluster-credit</artifactId>
+    <artifactId>switchyard-demos-cluster-credit</artifactId>
     <name>Quickstart Demo: Cluster - Credit Service</name>
     <dependencies>
         <dependency>

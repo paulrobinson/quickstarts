@@ -21,7 +21,7 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <groupId>org.switchyard.quickstarts.demos</groupId>
-    <artifactId>switchyard-quickstart-demo-policy-security-saml</artifactId>
+    <artifactId>switchyard-demos-policy-security-saml</artifactId>
     <name>Quickstart Demo : Security Policy : SAML Assertion (+SSL)</name>
     <properties>
         <deploy.skip>true</deploy.skip>

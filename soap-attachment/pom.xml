@@ -21,7 +21,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>org.switchyard.quickstarts</groupId>
-    <artifactId>switchyard-quickstart-soap-attachment</artifactId>
+    <artifactId>switchyard-soap-attachment</artifactId>
     <packaging>jar</packaging>
     <name>Quickstart : SOAP with Attachments</name>
     <properties>

@@ -20,7 +20,7 @@
         <version>2.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-jca-outbound-hornetq</artifactId>
+    <artifactId>switchyard-jca-outbound-hornetq</artifactId>
     <name>Quickstart : JCA Outbound Binding for HornetQ</name>
     <properties>
         <skipTests>true</skipTests>

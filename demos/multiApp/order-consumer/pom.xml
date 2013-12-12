@@ -16,11 +16,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.switchyard.quickstarts.demos</groupId>
-        <artifactId>switchyard-quickstart-demo-multiapp</artifactId>
+        <artifactId>switchyard-demos-multiApp</artifactId>
         <version>2.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-demo-multi-order-consumer</artifactId>
+    <artifactId>switchyard-demos-multiApp-order-consumer</artifactId>
     <packaging>jar</packaging>
     <name>Quickstart Demo: Multiple Applications - Order Consumer</name>
     <dependencies>
@@ -73,7 +73,7 @@
         </dependency>
         <dependency>
             <groupId>org.switchyard.quickstarts.demos</groupId>
-            <artifactId>switchyard-quickstart-demo-multi-artifacts</artifactId>
+            <artifactId>switchyard-demos-multiApp-artifacts</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

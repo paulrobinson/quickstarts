@@ -20,7 +20,7 @@
         <version>2.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>switchyard-quickstart-ear-deployment</artifactId>
+    <artifactId>switchyard-ear-deployment</artifactId>
     <name>Quickstart : EAR Deployment</name>
     <packaging>pom</packaging>
     <modules>
