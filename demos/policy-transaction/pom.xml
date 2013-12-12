@@ -29,6 +29,8 @@
     <properties>
         <skipTests>true</skipTests>
         <deploy.skip>true</deploy.skip>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
     </properties>
     <dependencies>
         <dependency>
@@ -125,13 +127,6 @@
                             <Dependencies>org.jboss.as.naming</Dependencies>
                         </manifestEntries>
                     </archive>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
                 </configuration>
             </plugin>
             <plugin>

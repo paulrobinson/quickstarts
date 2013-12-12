@@ -26,6 +26,8 @@
     <name>Quickstart : Camel AMQP Binding</name>
     <properties>
         <maven.exec.mainClass>org.switchyard.quickstarts.camel.amqp.binding.QpidServer</maven.exec.mainClass>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
     </properties>
     <dependencies>
         <dependency>
@@ -81,13 +83,6 @@
                             <Dependencies>org.apache.qpid</Dependencies>
                         </manifestEntries>
                     </archive>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
                 </configuration>
             </plugin>
             <plugin>

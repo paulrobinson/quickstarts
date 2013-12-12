@@ -28,6 +28,8 @@
     <name>Quickstart Demo : Security Policy : WSS Username (+SSL)</name>
     <properties>
         <deploy.skip>true</deploy.skip>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
     </properties>
     <dependencies>
         <dependency>
@@ -65,13 +67,6 @@
     <build>
         <finalName>${project.artifactId}</finalName>
         <plugins>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.switchyard</groupId>
                 <artifactId>switchyard-plugin</artifactId>
