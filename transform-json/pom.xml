@@ -26,6 +26,14 @@
     <artifactId>switchyard-transform-json</artifactId>
     <packaging>jar</packaging>
     <name>SwitchYard Quickstart: transform-json</name>
+    <description>Quickstart : JSON Transformation</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
     <properties>
         <maven.compiler.target>1.6</maven.compiler.target>
         <maven.compiler.source>1.6</maven.compiler.source>
@@ -98,14 +106,4 @@
             </plugin>
         </plugins>
     </build>
-<description>Quickstart : JSON Transformation</description>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
 </project>

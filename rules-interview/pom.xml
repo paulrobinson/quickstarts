@@ -24,6 +24,28 @@
     </parent>
     <artifactId>switchyard-rules-interview</artifactId>
     <name>SwitchYard Quickstart: rules-interview</name>
+    <description>Quickstart : Rules Interview</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
+    <repositories>
+        <repository>
+            <id>jboss-public-repository</id>
+            <name>JBoss Public Maven Repository</name>
+            <url>http://repository.jboss.org/nexus/content/groups/public</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>jboss-public-repository</id>
+            <name>JBoss Public Maven Repository</name>
+            <url>http://repository.jboss.org/nexus/content/groups/public</url>
+        </pluginRepository>
+    </pluginRepositories>
     <properties>
         <deploy.skip>true</deploy.skip>
         <maven.compiler.target>1.6</maven.compiler.target>
@@ -70,20 +92,6 @@
             <artifactId>switchyard-component-soap</artifactId>
         </dependency>
     </dependencies>
-    <repositories>
-        <repository>
-            <id>jboss-public-repository</id>
-            <name>JBoss Public Maven Repository</name>
-            <url>http://repository.jboss.org/nexus/content/groups/public</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>jboss-public-repository</id>
-            <name>JBoss Public Maven Repository</name>
-            <url>http://repository.jboss.org/nexus/content/groups/public</url>
-        </pluginRepository>
-    </pluginRepositories>
     <build>
         <finalName>${project.artifactId}</finalName>
         <plugins>
@@ -147,14 +155,4 @@
             </properties>
         </profile>
     </profiles>
-<description>Quickstart : Rules Interview</description>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
 </project>

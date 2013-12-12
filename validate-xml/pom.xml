@@ -26,6 +26,14 @@
     <artifactId>switchyard-validate-xml</artifactId>
     <packaging>jar</packaging>
     <name>SwitchYard Quickstart: validate-xml</name>
+    <description>Quickstart : XML Message Validation</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
     <properties>
         <deploy.skip>true</deploy.skip>
         <maven.compiler.target>1.6</maven.compiler.target>
@@ -141,14 +149,4 @@
             </properties>
         </profile>
     </profiles>
-<description>Quickstart : XML Message Validation</description>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
 </project>

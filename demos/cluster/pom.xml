@@ -25,16 +25,9 @@
     </parent>
     <groupId>org.switchyard.quickstarts.demos</groupId>
     <artifactId>switchyard-demos-cluster</artifactId>
-    <name>Quickstart Demo: Cluster</name>
     <packaging>pom</packaging>
-    <modules>
-        <module>client</module>
-        <module>credit</module>
-        <module>dealer</module>
-    </modules>
-<description>Quickstart Demo: Cluster</description>
-
-
+    <name>Quickstart Demo: Cluster</name>
+    <description>Quickstart Demo: Cluster</description>
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
@@ -42,10 +35,13 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
         </license>
     </licenses>
-
-
     <properties>
         <maven.compiler.target>1.6</maven.compiler.target>
         <maven.compiler.source>1.6</maven.compiler.source>
     </properties>
+    <modules>
+        <module>client</module>
+        <module>credit</module>
+        <module>dealer</module>
+    </modules>
 </project>

@@ -24,19 +24,27 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-ear-deployment</artifactId>
-    <name>SwitchYard Quickstart: ear-deployment</name>
     <packaging>pom</packaging>
+    <name>SwitchYard Quickstart: ear-deployment</name>
+    <description>Quickstart : EAR Deployment</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
+    <properties>
+        <deploy.skip>true</deploy.skip>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
+    </properties>
     <modules>
         <module>artifacts</module>
         <module>order-service</module>
         <module>order-consumer</module>
         <module>ear-assembly</module>
     </modules>
-    <properties>
-        <deploy.skip>true</deploy.skip>
-        <maven.compiler.target>1.6</maven.compiler.target>
-        <maven.compiler.source>1.6</maven.compiler.source>
-    </properties>
     <build>
         <plugins>
             <plugin>
@@ -65,14 +73,4 @@
             </properties>
         </profile>
     </profiles>
-<description>Quickstart : EAR Deployment</description>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
 </project>

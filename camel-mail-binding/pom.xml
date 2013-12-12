@@ -25,6 +25,14 @@
     </parent>
     <artifactId>switchyard-camel-mail-binding</artifactId>
     <name>SwitchYard Quickstart: camel-mail-binding</name>
+    <description>Quickstart : Camel Mail Binding</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
     <properties>
         <deploy.skip>true</deploy.skip>
         <maven.compiler.target>1.6</maven.compiler.target>
@@ -124,14 +132,4 @@
             </properties>
         </profile>
     </profiles>
-<description>Quickstart : Camel Mail Binding</description>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
 </project>

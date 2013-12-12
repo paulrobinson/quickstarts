@@ -26,6 +26,42 @@
     <groupId>org.switchyard.quickstarts.demos</groupId>
     <artifactId>switchyard-demos-transaction-propagation-dealer</artifactId>
     <name>Quickstart Demo: Remote Transaction Propagation - Dealer Service</name>
+    <description>Quickstart Demo: Remote Transaction Propagation - Dealer Service</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
+    <repositories>
+        <repository>
+            <id>jboss-public-repository</id>
+            <name>JBoss Public Maven Repository</name>
+            <url>http://repository.jboss.org/nexus/content/groups/public</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>jboss-public-repository</id>
+            <name>JBoss Public Maven Repository</name>
+            <url>http://repository.jboss.org/nexus/content/groups/public</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>hibernate4.ddl</id>
+            <url>http://www.smartics.eu/nexus/content/groups/public-group</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+    <properties>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.switchyard</groupId>
@@ -88,30 +124,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <repositories>
-        <repository>
-            <id>jboss-public-repository</id>
-            <name>JBoss Public Maven Repository</name>
-            <url>http://repository.jboss.org/nexus/content/groups/public</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>jboss-public-repository</id>
-            <name>JBoss Public Maven Repository</name>
-            <url>http://repository.jboss.org/nexus/content/groups/public</url>
-        </pluginRepository>
-        <pluginRepository>
-            <id>hibernate4.ddl</id>
-            <url>http://www.smartics.eu/nexus/content/groups/public-group</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
     <build>
         <finalName>${project.artifactId}</finalName>
         <plugins>
@@ -158,20 +170,4 @@
             </plugin>
         </plugins>
     </build>
-<description>Quickstart Demo: Remote Transaction Propagation - Dealer Service</description>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
-
-
-    <properties>
-        <maven.compiler.target>1.6</maven.compiler.target>
-        <maven.compiler.source>1.6</maven.compiler.source>
-    </properties>
 </project>

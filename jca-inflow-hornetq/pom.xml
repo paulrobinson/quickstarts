@@ -25,6 +25,14 @@
     </parent>
     <artifactId>switchyard-jca-inflow-hornetq</artifactId>
     <name>SwitchYard Quickstart: jca-inflow-hornetq</name>
+    <description>Quickstart : JCA Inflow Binding for HornetQ</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
     <properties>
         <skipTests>true</skipTests>
         <deploy.skip>true</deploy.skip>
@@ -155,14 +163,4 @@
             </properties>
         </profile>
     </profiles>
-<description>Quickstart : JCA Inflow Binding for HornetQ</description>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
 </project>

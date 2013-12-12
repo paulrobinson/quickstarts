@@ -25,6 +25,14 @@
     </parent>
     <artifactId>switchyard-jca-inflow-activemq</artifactId>
     <name>SwitchYard Quickstart: jca-inflow-activemq</name>
+    <description>Quickstart : JCA Inflow Binding for ActiveMQ</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
     <properties>
         <skipTests>true</skipTests>
         <deploy.skip>true</deploy.skip>
@@ -184,14 +192,4 @@
             </properties>
         </profile>
     </profiles>
-<description>Quickstart : JCA Inflow Binding for ActiveMQ</description>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
 </project>

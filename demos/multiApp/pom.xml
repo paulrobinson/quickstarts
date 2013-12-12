@@ -25,19 +25,27 @@
     </parent>
     <groupId>org.switchyard.quickstarts.demos</groupId>
     <artifactId>switchyard-demos-multiApp</artifactId>
-    <name>Quickstart Demo: Multiple Applications</name>
     <packaging>pom</packaging>
+    <name>Quickstart Demo: Multiple Applications</name>
+    <description>Quickstart Demo: Multiple Applications</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
+    <properties>
+        <deploy.skip>true</deploy.skip>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
+    </properties>
     <modules>
         <module>artifacts</module>
         <module>order-service</module>
         <module>order-consumer</module>
         <module>web</module>
     </modules>
-    <properties>
-        <deploy.skip>true</deploy.skip>
-        <maven.compiler.target>1.6</maven.compiler.target>
-        <maven.compiler.source>1.6</maven.compiler.source>
-    </properties>
     <build>
         <plugins>
             <plugin>
@@ -66,14 +74,4 @@
             </properties>
         </profile>
     </profiles>
-<description>Quickstart Demo: Multiple Applications</description>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
 </project>

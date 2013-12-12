@@ -26,6 +26,14 @@
     <groupId>org.switchyard.quickstarts.demos</groupId>
     <artifactId>switchyard-demos-policy-security-basic-propagate</artifactId>
     <name>Quickstart Demo : Security Policy : Basic Authentication (+SSL) with Propagation</name>
+    <description>Quickstart Demo : Security Policy : Basic Authentication (+SSL) with Propagation</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
     <properties>
         <deploy.skip>true</deploy.skip>
         <maven.compiler.target>1.6</maven.compiler.target>
@@ -139,14 +147,4 @@
             </properties>
         </profile>
     </profiles>
-<description>Quickstart Demo : Security Policy : Basic Authentication (+SSL) with Propagation</description>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
 </project>

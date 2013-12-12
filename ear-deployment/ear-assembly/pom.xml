@@ -26,6 +26,18 @@
     <artifactId>switchyard-ear-deployment-ear-assembly</artifactId>
     <packaging>ear</packaging>
     <name>SwitchYard Quickstart: ear-deployment - ear-assembly</name>
+    <description>Quickstart : EAR Deployment - Application Assembly</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
+    <properties>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.switchyard.quickstarts</groupId>
@@ -112,20 +124,4 @@
             </plugin>
         </plugins>
     </build>
-<description>Quickstart : EAR Deployment - Application Assembly</description>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
-
-
-    <properties>
-        <maven.compiler.target>1.6</maven.compiler.target>
-        <maven.compiler.source>1.6</maven.compiler.source>
-    </properties>
 </project>

@@ -24,8 +24,20 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-bpel-xts-wsat-bpel</artifactId>
-    <name>SwitchYard Quickstart: bpel-xts-wsat - bpel</name>
     <packaging>jar</packaging>
+    <name>SwitchYard Quickstart: bpel-xts-wsat - bpel</name>
+    <description>Quickstart : BPEL Service : XTS WSAT : Business Travel Process</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
+    <properties>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.switchyard</groupId>
@@ -54,23 +66,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-<description>Quickstart : BPEL Service : XTS WSAT : Business Travel Process</description>
     <build>
         <finalName>${project.artifactId}</finalName>
     </build>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
-
-
-    <properties>
-        <maven.compiler.target>1.6</maven.compiler.target>
-        <maven.compiler.source>1.6</maven.compiler.source>
-    </properties>
 </project>

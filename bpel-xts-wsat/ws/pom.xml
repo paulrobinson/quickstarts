@@ -24,8 +24,20 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>switchyard-bpel-xts-wsat-ws</artifactId>
-    <name>SwitchYard Quickstart: bpel-xts-wsat - ws</name>
     <packaging>ejb</packaging>
+    <name>SwitchYard Quickstart: bpel-xts-wsat - ws</name>
+    <description>Quickstart : BPEL Service : XTS WSAT : Airport Web Service</description>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
+    <properties>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.jboss.jbossts</groupId>
@@ -60,20 +72,4 @@
             </plugin>
         </plugins>
     </build>
-<description>Quickstart : BPEL Service : XTS WSAT : Airport Web Service</description>
-
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <distribution>repo</distribution>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-        </license>
-    </licenses>
-
-
-    <properties>
-        <maven.compiler.target>1.6</maven.compiler.target>
-        <maven.compiler.source>1.6</maven.compiler.source>
-    </properties>
 </project>
