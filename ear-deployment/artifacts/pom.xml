@@ -27,6 +27,7 @@
     <packaging>jar</packaging>
     <name>Quickstart : EAR Deployment - Service Artifacts</name>
     <build>
+        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.jboss.as.plugins</groupId>

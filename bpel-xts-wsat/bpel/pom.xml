@@ -55,4 +55,7 @@
         </dependency>
     </dependencies>
 <description>Quickstart : BPEL Service : XTS WSAT : Business Travel Process</description>
+    <build>
+        <finalName>${project.artifactId}</finalName>
+    </build>
 </project>

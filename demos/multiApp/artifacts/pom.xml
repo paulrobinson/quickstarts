@@ -27,7 +27,7 @@
     <packaging>jar</packaging>
     <name>Quickstart Demo: Multiple Applications - Service Artifacts</name>
     <build>
-        <finalName>OrderService</finalName>
+        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-jar-plugin</artifactId>
