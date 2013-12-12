@@ -25,7 +25,7 @@
 
     <advanced>
         <framesize>65535</framesize>
-        <locale>en_US</locale>	
+        <locale>en_US</locale>    
     </advanced>
 
     <security>
